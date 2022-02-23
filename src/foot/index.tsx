@@ -57,6 +57,10 @@ function Foot() {
     title: t("Resources"),
     list: [
       {
+        name: t("Whitepaper"),
+        url: "https://docs.aresprotocol.io/#/",
+      },
+      {
         name: t("Documentation"),
         url: "https://docs.aresprotocol.io/#/",
       },

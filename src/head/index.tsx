@@ -117,6 +117,11 @@ function Head() {
         name: t("About"),
         children: [
           {
+            name: t("Whitepaper"),
+            id: "Whitepaper",
+            url: "https://docs.aresprotocol.io/#/",
+          },
+          {
             name: t("Documentation"),
             id: "Documentation",
             url: "https://docs.aresprotocol.io/#/",
@@ -164,6 +169,10 @@ function Head() {
         {
           name: "KR",
           id: "kr",
+        },
+        {
+          name: "AR",
+          id: "ar",
         },
       ],
       localIndex: 0,
@@ -464,6 +473,8 @@ function Head() {
                                             head.language.localIndex = 4;
                                           } else if ((e.target as any).innerText === "KR") {
                                             head.language.localIndex = 5;
+                                          }else if ((e.target as any).innerText === "AR") {
+                                            head.language.localIndex = 6;
                                           }
                                           const language =
                                               head.language.select[head.language.localIndex]
@@ -666,6 +677,8 @@ function Head() {
                                     head.language.localIndex = 4;
                                   } else if ((e.target as any).innerText === "KR") {
                                     head.language.localIndex = 5;
+                                  } else if ((e.target as any).innerText === "AR") {
+                                    head.language.localIndex = 6;
                                   }
                                   const language =
                                       head.language.select[head.language.localIndex]
