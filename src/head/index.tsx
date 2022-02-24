@@ -174,6 +174,10 @@ function Head() {
           name: "AR",
           id: "ar",
         },
+        {
+          name: "UA",
+          id: "ua",
+        },
       ],
       localIndex: 0,
     },
@@ -473,8 +477,10 @@ function Head() {
                                             head.language.localIndex = 4;
                                           } else if ((e.target as any).innerText === "KR") {
                                             head.language.localIndex = 5;
-                                          }else if ((e.target as any).innerText === "AR") {
+                                          } else if ((e.target as any).innerText === "AR") {
                                             head.language.localIndex = 6;
+                                          } else if ((e.target as any).innerText === "UA") {
+                                            head.language.localIndex = 7;
                                           }
                                           const language =
                                               head.language.select[head.language.localIndex]
@@ -679,6 +685,8 @@ function Head() {
                                     head.language.localIndex = 5;
                                   } else if ((e.target as any).innerText === "AR") {
                                     head.language.localIndex = 6;
+                                  } else if ((e.target as any).innerText === "UA") {
+                                    head.language.localIndex = 7;
                                   }
                                   const language =
                                       head.language.select[head.language.localIndex]
