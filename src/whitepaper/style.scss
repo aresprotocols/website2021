@@ -1,0 +1,74 @@
+
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0;
+    height: 100vh;
+    display: flex;
+    font-size: 20px;
+    column-gap: 20px;
+    color: #24292e;
+    line-height: 26px;
+    box-sizing: border-box;
+    .title {
+        color: #1d1f75;
+        font-size: 40px;
+        text-align: left;
+        padding-top: 0;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+    .subtitle {
+        font-size: 28px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .bold {
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: bold;
+    }
+}
+
+.content {
+    width: 760px;
+    height: 100%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+
+    .segment {
+        margin-bottom: 1rem;
+    }
+    section {
+        margin-bottom: 55px;
+    }
+}
+
+.wnav {
+    width: 220px;
+    position: relative;
+    top: 100px;
+    cursor: pointer;
+    a {
+        padding: 5px 0;
+        display: block;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    a:visited, a:link {
+        color: #24292e;
+    }
+    a:hover, a:active {
+        color: #0c97e5;
+    }
+
+    .navList {
+        position: fixed;
+        top: 100px;
+    }
+}

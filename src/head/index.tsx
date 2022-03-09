@@ -119,7 +119,7 @@ function Head() {
           {
             name: t("Whitepaper"),
             id: "Whitepaper",
-            url: "https://docs.aresprotocol.io/#/",
+            url: "/whitepaper",
           },
           {
             name: t("Documentation"),

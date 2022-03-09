@@ -12,6 +12,7 @@ import Join from "./join";
 import classnames from "classnames";
 import Foot from "./foot";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Whitepaper from "./whitepaper";
 
 function App() {
   const [widgetShow, setWidgetShow] = useState(true);
@@ -47,6 +48,7 @@ function App() {
               </div>
             </Route>
 
+            <Route path="/whitepaper" component={Whitepaper} />
             <Route path="/admin" component={backend} />
             <Route path="/mars" component={marsApp} />
           </Switch>
