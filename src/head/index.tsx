@@ -119,7 +119,7 @@ function Head() {
           {
             name: t("Whitepaper"),
             id: "Whitepaper",
-            url: "/whitepaper",
+            url: "/whitepaper/" + i18n.language,
           },
           {
             name: t("Documentation"),

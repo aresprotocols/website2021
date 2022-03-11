@@ -20,41 +20,41 @@ function App() {
   const marsApp = lazy(() => import("./Mars"));
 
   return (
-    <>
-      <BrowserRouter>
-        <Suspense fallback={<div>loading...</div>}>
-          <Switch>
-            <Route exact path="/">
-              <div
-                className={classnames(
-                  "App",
-                  window.screen.width <= 1279 ? "m" : ""
-                )}
-              >
-                <Head />
-                <Technology />
-                <EconomicModelApplicationScenario />
-                <Team />
-                <Strategic />
-                <Road />
-                <Join />
-                <Foot />
-                <div className="widget" style={{display: `${widgetShow ? "block" : "none"}`}}>
-                  <div className="close">
-                    <span onClick={() => setWidgetShow(!widgetShow)}>×</span>
+      <>
+        <BrowserRouter>
+          <Suspense fallback={<div>loading...</div>}>
+            <Switch>
+              <Route exact path="/">
+                <div
+                    className={classnames(
+                        "App",
+                        window.screen.width <= 1279 ? "m" : ""
+                    )}
+                >
+                  <Head/>
+                  <Technology/>
+                  <EconomicModelApplicationScenario/>
+                  <Team/>
+                  <Strategic/>
+                  <Road/>
+                  <Join/>
+                  <Foot/>
+                  <div className="widget" style={{display: `${widgetShow ? "block" : "none"}`}}>
+                    <div className="close">
+                      <span onClick={() => setWidgetShow(!widgetShow)}>×</span>
+                    </div>
+                    <div id="crypto-widget-CoinList" data-design="classic" data-coins="ares-protocol"></div>
                   </div>
-                  <div id="crypto-widget-CoinList" data-design="classic" data-coins="ares-protocol"></div>
                 </div>
-              </div>
-            </Route>
+              </Route>
 
-            <Route path="/whitepaper" component={Whitepaper} />
-            <Route path="/admin" component={backend} />
-            <Route path="/mars" component={marsApp} />
-          </Switch>
-        </Suspense>
-      </BrowserRouter>
-    </>
+              <Route path="/whitepaper/:lang" component={Whitepaper} />
+              <Route path="/admin" component={backend}/>
+              <Route path="/mars" component={marsApp}/>
+            </Switch>
+          </Suspense>
+        </BrowserRouter>
+      </>
   );
 }
 

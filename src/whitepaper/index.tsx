@@ -1,9 +1,22 @@
 
 import "./style.scss"
 import {useTranslation} from "react-i18next";
+import {useEffect} from "react";
+import {useParams} from "react-router-dom";
 
 const Whitepaper = () => {
-    const { t } = useTranslation();
+    const { t,i18n } = useTranslation();
+    const params = useParams();
+
+
+    useEffect(() => {
+        i18n.changeLanguage(params.lang);
+        // eslint-disable-next-line
+    }, []);
+
+    console.log("tran", t);
+    console.log("tran", i18n);
+
     return (
         <div className='wrapper'>
             <div className="wnav">
