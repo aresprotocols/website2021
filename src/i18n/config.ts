@@ -198,6 +198,7 @@ export const resources = {
       commonRewards: "Common Rewards",
       teamRewards: "Team Rewards",
       invitationRewards: "Invitation Rewards",
+      InvitationAddress: "Invitation Address",
       rewardsDescription1: "Support 1 $KSM to gain 1000 $AMAS",
       rewardsDescription2: "Support 1 $KSM to gain 1200 $AMAS",
       rewardsDescription3: "Invite others to get 3% bonus of $AMAS",

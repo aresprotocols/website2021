@@ -63,7 +63,7 @@ function MarsApp(props: any) {
         contributions={contributions} paraId={paraId} />
 
       <Supply />
-      <Deposit />
+      <Deposit api={api}/>
       <Reference api={api} />
       <Community />
       <Footer />

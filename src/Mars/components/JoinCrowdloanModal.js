@@ -5,6 +5,7 @@ import { render } from "react-dom";
 import { useTranslation } from "react-i18next";
 import Alert from "./Alert";
 import styles from "./JoinCrowdloanModal.module.scss";
+import Config from "../../Config";
 
 let theInput = null;
 
@@ -16,6 +17,8 @@ const JoinCrowdloanModal = props => {
 	const [account, setAccount] = useState(null);
 	const [balance, setBalance] = useState(null);
 	const [inputValue, setInputValue] = useState(new BigNumber(0));
+	const [email, setEmail] = useState("");
+	const [invitationAddress, setInvitationAddress] = useState("-");
 
 	const handleConnect = async event => {
 		await web3Enable("mars");
@@ -54,6 +57,7 @@ const JoinCrowdloanModal = props => {
 
 				if (status.isInBlock) {
 					// unmountComponentAtNode(document.getElementById("mainModalContainer"));
+					saveContribution(status.asInBlock,  inputValue.toFixed());
 					props.onClose();
 					render(<Alert title={t("thanksForSupport")} content={t("thanksForSupportContent")} />, document.getElementById("mainModalContainer"));
 				}
@@ -73,6 +77,37 @@ const JoinCrowdloanModal = props => {
 	const handleInput = event => {
 		setInputValue(new BigNumber(event.target.value).shiftedBy(12));
 	}
+
+	const saveContribution = async (block_num, val) => {
+		const data = {
+			found_id: "0",
+			para_id: "0",
+			who: account,
+			contributed: val,
+			contributing: val,
+			block_num: block_num,
+			extrinsic_index: "0",
+			status: "1",
+			email: email,
+			invitation_address: invitationAddress
+		}
+		const result = await (await fetch(Config.baseMailAPI + Config.saveContribution, {
+			method: "POST",
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify(data)
+		})).json();
+	}
+
+	const handleEmailInput = e => {
+		setEmail(e.target.value);
+	}
+
+	const handleInvitationInput = e => {
+		const val = e.target.value === "" ? "-" : e.target.value;
+		setInvitationAddress(val);
+	}
+
+
 
 	// const init = async () => {
 	// 	const provider = new WsProvider("wss://kusama-rpc.polkadot.io");
@@ -128,7 +163,15 @@ const JoinCrowdloanModal = props => {
 
 					<div style={{ width: "100%" }}>
 						<div className={styles.label}>{t("email")}</div>
-						<input />
+						<input onChange={handleEmailInput}/>
+					</div>
+
+					<div style={{ width: "100%" }}>
+						<div className={styles.label}>
+							{t("InvitationAddress")}&nbsp;
+							<span style={{color: "#E56239", fontSize: "14px"}}>*optional</span>
+						</div>
+						<input onChange={handleInvitationInput} />
 					</div>
 
 					<div className={styles.buttons}>
