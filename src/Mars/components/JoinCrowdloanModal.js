@@ -91,7 +91,7 @@ const JoinCrowdloanModal = props => {
 			email: email,
 			invitation_address: invitationAddress
 		}
-		const result = await (await fetch(Config.baseMailAPI + Config.saveContribution, {
+		const result = await (await fetch(Config.baseMailAPI + Config.contribution, {
 			method: "POST",
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify(data)

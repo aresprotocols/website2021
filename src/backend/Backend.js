@@ -76,6 +76,29 @@ const Backend = _ => {
 		}));
 	}
 
+	const downloadInvitation = async () => {
+		if (!token) {
+			return window.alert("token不存在，请重新登录。");
+		}
+
+		fetch(Config.baseMailAPI + Config.contributions, {
+			method: "GET",
+			headers: {
+				'Content-Type': 'application/json',
+				'Authorization': token
+			}
+		}).then(res => res.blob().then(blob => {
+			const filename = "invitation.json";
+			const a = document.createElement('a');
+			const url = window.URL.createObjectURL(blob);
+			a.href = url;
+			a.target = "_blank";
+			a.download = filename;
+			a.click();
+			window.URL.revokeObjectURL(url);
+		}));
+	}
+
 	const handleDownload = async _ => {
 		if (!token) {
 			return window.alert("token不存在，请重新登录。");
@@ -190,6 +213,30 @@ const Backend = _ => {
 		}
 	};
 
+	const createInvitationTable = async () => {
+		if (!token) {
+			return window.alert("token不存在，请重新登录。");
+		}
+
+		if (window.confirm("确认创建invitation表吗？")) {
+			const result = await fetch(Config.baseMailAPI + Config.creatInvitation, {
+				method: "POST",
+				headers: {
+					'Content-Type': 'application/json',
+					'Authorization': token
+				},
+			});
+
+			const res = await result.json();
+			if (res.ok) {
+				window.alert("数据表invitation已创建。");
+			} else {
+				console.warn(result.message);
+			}
+		}
+	};
+
+
 	const loginForm = (<div className="backendLoginForm">
 		<input id="userName" placeholder="管理员用户名" onChange={handleChange} />
 		<input id="userPassword" type="password" placeholder="管理员密码" onChange={handleChange} />
@@ -215,8 +262,10 @@ const Backend = _ => {
 				<button onClick={handleDownload}>下载用户数据文件</button>
 
 				<button style={{ marginLeft: "1em" }} onClick={handleDownloadContribution}>下载contribution数据</button>
+				<button style={{ marginLeft: "1em" }} onClick={downloadInvitation}>下载推荐人数据</button>
 
 				<button style={{ marginLeft: "1em" }} onClick={handleCreateTable}>创建addresses表</button>
+				<button style={{ marginLeft: "1em" }} onClick={createInvitationTable}>创建invitation表</button>
 
 				<button style={{ marginLeft: "1em" }} onClick={handleAddColumn}>添加字段</button>
 

@@ -8,7 +8,9 @@ const Config = {
 	contributionURL: "/admin/addresses",
 	saveEthAddress: "/api/saveaddress",
 	runSql: "/admin/run",
-	saveContribution: "/api/contribution"
+	saveContribution: "/api/contribution",
+	contributions: "/api/contributions",
+	creatInvitation: "/api/invitation",
 }
 
 export default Config;
