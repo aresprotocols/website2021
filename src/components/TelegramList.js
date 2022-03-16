@@ -31,17 +31,24 @@ const TelegramList = props => {
 
 				<div className={styles.content}>
 					<TelegramItem icon="/images/0000-35.png" label={t("official")} url="https://t.me/AresProtocolLab" />
-					<TelegramItem icon="/images/RU-36.png" label={t("russia")} url="https://t.me/AresProtocol_RussianCommunity" />
 					<TelegramItem icon="/images/CN.png" label={t("china")} url="http://t.me/AresProtocolChina" />
-					<TelegramItem icon="/images/UK.png" label={t("ukraine")} url="https://t.me/AresProtocol_UkrainianCommunity" />
 					<TelegramItem icon="/images/ES.png" label={t("spanish")} url="https://t.me/aresprotocol_spanish" />
-					<TelegramItem icon="/images/KO.png" label={t("korea")} url="https://t.me/AresProtocol_KoreanCommunity" />
-					<TelegramItem icon="/images/Italia.png" label={t("italy")} url="https://t.me/AresProtocolItalian" />
+					<TelegramItem icon="/images/PORTUGUESE.png" label={t("portuguese")} url="https://t.me/AresProtocol_PortugueseCommunity" />
+
+					<TelegramItem icon="/images/UK.png" label={t("ukraine")} url="https://t.me/AresProtocol_UkrainianCommunity" />
 					<TelegramItem icon="/images/Armenia.png" label={t("armenia")} url="https://t.me/AresProtocol_Armenian" />
-					<TelegramItem icon="/images/Iran.png" label={t("persian")} url="https://t.me/AresProtocolPersian" />
-					<TelegramItem icon="/images/JP.png" label={t("japan")} url="https://t.me/AresProtocol_JapaneseCommunity" />
+					<TelegramItem icon="/images/Arabic.png" label={t("Arabic")} url="https://t.me/AresProtocolArabic_Community" />
 					<TelegramItem icon="/images/Israel-41.png" label={t("israel")} url="https://t.me/AresProtocolIsrale" />
-					<TelegramItem icon="/images/Giorgia.png" label={t("georgia")} url="http://t.me/AresProtocolGeorgia" />
+
+					<TelegramItem icon="/images/KO.png" label={t("korea")} url="https://t.me/AresProtocol_KoreanGroup" />
+					<TelegramItem icon="/images/JP.png" label={t("japan")} url="https://t.me/AresProtocol_JapaneseCommunity" />
+					<TelegramItem icon="/images/Turkey-44.png" label={t("turkey")} url="https://t.me/AresProtocol_TurkishCommunity" />
+					<TelegramItem icon="/images/RU-36.png" label={t("russia")} url="https://t.me/AresProtocol_RussianCommunity" />
+
+					<TelegramItem icon="/images/India-41.png" label={t("india")} url="https://t.me/AresProtocol_HindiCommunity" />
+					<TelegramItem icon="/images/BAN-44.png" label={t("bangladesh")} url="https://t.me/AresProtocolLab_bd" />
+					<TelegramItem icon="/images/FR-44.png" label={t("france")} url="https://t.me/Ares_Protocol_French_community" />
+					<TelegramItem icon="/images/indonesia-44.png" label={t("indonesia")} url="https://t.me/AresProtocolIndonesia" />
 				</div>
 			</div>
 		</div>

@@ -147,7 +147,7 @@ function Head() {
     language: {
       select: [
         {
-          name: "EN",
+          name: "English",
           id: "en",
         },
         {
@@ -155,27 +155,27 @@ function Head() {
           id: "cn",
         },
         {
-          name: "ES",
+          name: "Español",
           id: "es",
         },
         {
-          name: "JP",
+          name: "日本語",
           id: "jp",
         },
         {
-          name: "RU",
+          name: "Русский",
           id: "ru",
         },
         {
-          name: "KR",
+          name: "한국어",
           id: "kr",
         },
         {
-          name: "AR",
+          name: "العربية",
           id: "ar",
         },
         {
-          name: "UA",
+          name: "Українська",
           id: "ua",
         },
       ],
@@ -465,21 +465,21 @@ function Head() {
                                         className={`two ${index !== 0 ? "three" : ""}`}
                                         onClick={(e) => {
                                           setlanguageStatus(!languageStatus);
-                                          if ((e.target as any).innerText === "EN") {
+                                          if ((e.target as any).innerText === "English") {
                                             head.language.localIndex = 0;
-                                          } else if ((e.target as any).innerText === "CN") {
+                                          } else if ((e.target as any).innerText === "简体中文") {
                                             head.language.localIndex = 1;
-                                          } else if ((e.target as any).innerText === "ES") {
+                                          } else if ((e.target as any).innerText === "Español") {
                                             head.language.localIndex = 2;
-                                          } else if ((e.target as any).innerText === "JP") {
+                                          } else if ((e.target as any).innerText === "日本語") {
                                             head.language.localIndex = 3;
-                                          } else if ((e.target as any).innerText === "RU") {
+                                          } else if ((e.target as any).innerText === "Русский") {
                                             head.language.localIndex = 4;
-                                          } else if ((e.target as any).innerText === "KR") {
+                                          } else if ((e.target as any).innerText === "한국어") {
                                             head.language.localIndex = 5;
-                                          } else if ((e.target as any).innerText === "AR") {
+                                          } else if ((e.target as any).innerText === "العربية") {
                                             head.language.localIndex = 6;
-                                          } else if ((e.target as any).innerText === "UA") {
+                                          } else if ((e.target as any).innerText === "Українська") {
                                             head.language.localIndex = 7;
                                           }
                                           const language =
@@ -501,7 +501,7 @@ function Head() {
                                           );
                                         }}
                                     >
-                                      {item.id.toUpperCase()}
+                                      {item.name}
                                     </span>
                                   })
                             }
