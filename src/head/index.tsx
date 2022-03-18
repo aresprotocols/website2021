@@ -178,6 +178,10 @@ function Head() {
           name: "Українська",
           id: "ua",
         },
+        {
+          name: "Français",
+          id: "fr",
+        },
       ],
       localIndex: 0,
     },
@@ -481,6 +485,8 @@ function Head() {
                                             head.language.localIndex = 6;
                                           } else if ((e.target as any).innerText === "Українська") {
                                             head.language.localIndex = 7;
+                                          } else if ((e.target as any).innerText === "Français") {
+                                            head.language.localIndex = 8;
                                           }
                                           const language =
                                               head.language.select[head.language.localIndex]
@@ -671,22 +677,24 @@ function Head() {
                                 className={`two ${index !== 0 ? "three" : ""}`}
                                 onClick={(e) => {
                                   setlanguageStatus(!languageStatus);
-                                  if ((e.target as any).innerText === "EN") {
+                                  if ((e.target as any).innerText === "English") {
                                     head.language.localIndex = 0;
-                                  } else if ((e.target as any).innerText === "CN") {
+                                  } else if ((e.target as any).innerText === "简体中文") {
                                     head.language.localIndex = 1;
-                                  } else if ((e.target as any).innerText === "ES") {
+                                  } else if ((e.target as any).innerText === "Español") {
                                     head.language.localIndex = 2;
-                                  } else if ((e.target as any).innerText === "JP") {
+                                  } else if ((e.target as any).innerText === "日本語") {
                                     head.language.localIndex = 3;
-                                  } else if ((e.target as any).innerText === "RU") {
+                                  } else if ((e.target as any).innerText === "Русский") {
                                     head.language.localIndex = 4;
-                                  } else if ((e.target as any).innerText === "KR") {
+                                  } else if ((e.target as any).innerText === "한국어") {
                                     head.language.localIndex = 5;
-                                  } else if ((e.target as any).innerText === "AR") {
+                                  } else if ((e.target as any).innerText === "العربية") {
                                     head.language.localIndex = 6;
-                                  } else if ((e.target as any).innerText === "UA") {
+                                  } else if ((e.target as any).innerText === "Українська") {
                                     head.language.localIndex = 7;
+                                  } else if ((e.target as any).innerText === "Français") {
+                                    head.language.localIndex = 8;
                                   }
                                   const language =
                                       head.language.select[head.language.localIndex]
