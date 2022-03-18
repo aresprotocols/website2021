@@ -33,20 +33,20 @@
         line-height: 40px;
         font-weight: bold;
     }
-}
 
-.content {
-    width: 760px;
-    height: 100%;
-    padding: 20px 0;
-    overflow: scroll;
-    scroll-behavior: smooth;
+    .content {
+        width: 760px;
+        height: 100%;
+        padding: 20px 0;
+        overflow: scroll;
+        scroll-behavior: smooth;
 
-    .segment {
-        margin-bottom: 1rem;
-    }
-    section {
-        margin-bottom: 55px;
+        .segment {
+            margin-bottom: 1rem;
+        }
+        section {
+            margin-bottom: 55px;
+        }
     }
 }
 

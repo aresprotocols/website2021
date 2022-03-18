@@ -14,9 +14,6 @@ const Whitepaper = () => {
         // eslint-disable-next-line
     }, []);
 
-    console.log("tran", t);
-    console.log("tran", i18n);
-
     return (
         <div className='wrapper'>
             <div className="wnav">
