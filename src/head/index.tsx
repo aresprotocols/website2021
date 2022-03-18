@@ -182,6 +182,10 @@ function Head() {
           name: "Français",
           id: "fr",
         },
+        {
+          name: "Türkçe",
+          id: "tk",
+        },
       ],
       localIndex: 0,
     },
@@ -487,6 +491,8 @@ function Head() {
                                             head.language.localIndex = 7;
                                           } else if ((e.target as any).innerText === "Français") {
                                             head.language.localIndex = 8;
+                                          } else if ((e.target as any).innerText === "Türkçe") {
+                                            head.language.localIndex = 9;
                                           }
                                           const language =
                                               head.language.select[head.language.localIndex]
@@ -695,6 +701,8 @@ function Head() {
                                     head.language.localIndex = 7;
                                   } else if ((e.target as any).innerText === "Français") {
                                     head.language.localIndex = 8;
+                                  } else if ((e.target as any).innerText === "Türkçe") {
+                                    head.language.localIndex = 9;
                                   }
                                   const language =
                                       head.language.select[head.language.localIndex]
