@@ -169,7 +169,7 @@ function EconomicModelApplicationScenario() {
           <div className="economicModelApplicationScenario-warp">
             <div className="economicModel-img">
               <div className="economic common">
-                <span className="economicText text">Economic Model</span>
+                <span className="economicText text">{t("Economic Model")}</span>
               </div>
               <div
                 className="economic1 common"

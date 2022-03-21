@@ -20,7 +20,7 @@ const Whitepaper = () => {
                 <div className="navList">
                     <a href="#introduction">{t("Introduction")}</a>
                     <a href="#technical">{t("Technical Architecture")}</a>
-                    <a href="#market">{t("Data market")}</a>
+                    <a href="#market">{t("Data Market")}</a>
                     <a href="#economic">{t("Economic Model")}</a>
                 </div>
             </div>
@@ -156,8 +156,8 @@ const Whitepaper = () => {
                 </section>
 
                 <section id="market">
-                    <div className="title">{t("Data market")}</div>
-                    <div className="subtitle">{t("Data market")}</div>
+                    <div className="title">{t("Data Market")}</div>
+                    <div className="subtitle">{t("Data Market")}</div>
                     <div>
                         <img src="/images/white-paper/dataMarket.jpeg" alt="" width="760"/>
                     </div>

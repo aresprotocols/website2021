@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import Config from "../Config";
 
 function Foot() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [sendAlert, setSendAlert] = useState(false);
   const [isClick, setClick] = useState(false);
   const [emailValue, setEmailValue] = useState("");
@@ -58,7 +58,7 @@ function Foot() {
     list: [
       {
         name: t("Whitepaper"),
-        url: "https://docs.aresprotocol.io/#/",
+        url: "/whitepaper/" + i18n.language,
       },
       {
         name: t("Documentation"),
