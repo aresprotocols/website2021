@@ -2581,7 +2581,7 @@ export const resources = {
     translation: {
       "Networks": "Réseaux",
       "Technology": "Technologie",
-      "Economics": "Economies",
+      "Economics": "Économies",
       "Application": "Application",
       "Documentation": "Documentation",
       "Buy Token": "Achetez des jetons",
@@ -2607,6 +2607,7 @@ export const resources = {
       "In the Finance Bureau of the Ares network, treasury funds come from part of the transaction fees, the punishment of malicious nodes, and pledges' inflation. Treasury funds are used to reward challengers, make up for data demanders' loss, and ecological construction.": "Dans le bureau de finances du réseau d'Ares, les fonds de trésorerie proviennent d'une partie des frais de transactions, de la punition des nœuds malveillants et de l'inflation des gages. Les fonds de trésorerie sont utilisés pour récompenser les challengers, compenser la perte des demandeurs de données et la construction écologique.",
       "Treasury": "Trésorerie",
       "Arbitration": "Arbitrage",
+      "Please comment，press the like button, share, retweet, and subscribe to our social media platforms.": "Veuillez commenter, appuyer sur les boutons d'aimer, partager, retweeter et vous abonner à nos plates-formes de média social.",
       "The aggregator or challenger is punished through the challenger's dispute, and a part of the fee will be rewarded to the reputation committee.": "L'agrégateur ou le challenger est puni par la dispute de challenger, et une partie de frais va être récompensée au comité de réputation.",
       "For each oracle request, a processing fee needs to be paid to the node.": "Pour chaque demande d'oracle, des frais de traitement doivent être payés au nœud.",
       "Transaction Fee": "Frais de Transaction",
