@@ -180,3 +180,67 @@
     }
   }
 }
+
+
+[dir="rtl"] {
+  .foot {
+    .foot-con {
+      text-align: right;
+      .about {
+        .about-email {
+          margin-top: 35px;
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 31.5px;
+            height: 21px;
+            margin-right: 5px;
+          }
+          a {
+            color: #1d1f75;
+            text-decoration: none;
+          }
+        }
+      }
+      .emailTip {
+
+      }
+
+      .link {
+        width: 330px;
+        .link-item {
+          margin-top: 20px;
+
+          a {
+            color: #363872;
+            text-decoration: none;
+          }
+        }
+      }
+      .subscribe {
+        .send {
+          direction: ltr;
+          input {
+            padding-right: 30px;
+          }
+
+          span {
+            left: 3px;
+          }
+        }
+      }
+    }
+
+    .copyright {
+
+    }
+    .alert {
+      .alert-content {
+        .alert-close {
+          left: 15px;
+        }
+      }
+    }
+  }
+}

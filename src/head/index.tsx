@@ -288,51 +288,6 @@ function Head() {
     return tempArray;
   }
 
-  const updateTransfer1 = (lan: string) => {
-    console.log("tran", lan);
-    // if (lan === "العربية") {
-      const root = document.getElementById("root");
-      // @ts-ignore
-      root.style.transform = "scaleX(-1)";
-
-      const pEles = document.getElementsByTagName("p");
-      for (let i = 0; i < pEles.length; i++) {
-        pEles[i].style.transform = "scaleX(-1)";
-      }
-
-
-    const spanEles = document.getElementsByTagName("span");
-    for (let i = 0; i < spanEles.length; i++) {
-      spanEles[i].style.transform = "scaleX(-1)";
-    }
-
-    const aEles = document.getElementsByTagName("a");
-    for (let i = 0; i < aEles.length; i++) {
-      aEles[i].style.transform = "scaleX(-1)";
-    }
-
-
-    // }
-  }
-
-  const updateTransfer = (lan: string) => {
-    const pEles = document.getElementsByTagName("p");
-    for (let i = 0; i < pEles.length; i++) {
-      pEles[i].style.direction = "rtl";
-    }
-
-
-    const spanEles = document.getElementsByTagName("span");
-    for (let i = 0; i < spanEles.length; i++) {
-      spanEles[i].style.direction = "rtl";
-    }
-
-    const aEles = document.getElementsByTagName("a");
-    for (let i = 0; i < aEles.length; i++) {
-      aEles[i].style.direction = "rtl";
-    }
-  }
-
   return (
     <>
       <section className="head" id="Home">
@@ -557,7 +512,12 @@ function Head() {
                                           i18n.changeLanguage(
                                               head.language.select[head.language.localIndex].id
                                           );
-                                          updateTransfer(language);
+
+                                          if (language === "العربية") {
+                                            document.documentElement.setAttribute("dir", "rtl");
+                                          } else {
+                                            document.documentElement.setAttribute("dir", "ltr");
+                                          }
 
                                         }}
                                     >

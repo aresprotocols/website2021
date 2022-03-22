@@ -73,3 +73,13 @@
         top: 100px;
     }
 }
+
+[dir="rtl"] {
+   .wrapper {
+       direction: rtl;
+       text-align: right !important;
+       .title {
+           text-align: right !important;
+       }
+   }
+}

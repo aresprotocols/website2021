@@ -821,3 +821,27 @@
 #root.cn .join .btn-con .btn span {
   padding-left: 110px;
 }
+
+
+[dir="rtl"] {
+  .head {
+    .head-con {
+      .video-img {
+        left: 0;
+        right: initial;
+      }
+      .head-content {
+        text-align: right;
+      }
+    }
+    .uniswapBtnText {
+      margin-right: 10px;
+    }
+  }
+
+  .usd {
+    .down {
+      direction: ltr;
+    }
+  }
+}

@@ -385,3 +385,26 @@
     width: 100%;
   }
 }
+
+
+[dir="rtl"] {
+  .swiper-button-prev,
+  .swiper-container-rtl .swiper-button-next {
+    &::after{
+      content: '>' !important;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev {
+    &::after{
+      content: '<' !important;
+    }
+  }
+
+  .wrap-road-title {
+    direction: ltr;
+    padding-right: 45px;
+    padding-left: initial;
+  }
+}

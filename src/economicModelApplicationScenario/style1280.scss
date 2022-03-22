@@ -334,4 +334,169 @@
       }
     }
   }
+
+  [dir="rtl"] {
+    #root.cn {
+      .economicModelApplicationScenario
+      .economicModelApplicationScenario-con
+      .economicModelApplicationScenario-warp
+      .economicModel-img
+      .economic4 {
+        bottom: 359 * 0.76190476px;
+      }
+      .economicModelApplicationScenario
+      .economicModelApplicationScenario-con
+      .economicModelApplicationScenario-warp
+      .economicModel-img
+      .economic1Text {
+        right: -257 * 0.76190476px;
+      }
+      .economicModelApplicationScenario
+      .economicModelApplicationScenario-con
+      .economicModelApplicationScenario-warp
+      .economicModel-img
+      .economic5Text {
+        right: 150 * 0.76190476px;
+      }
+    }
+
+    .economicModelApplicationScenario {
+      .economicModelApplicationScenario-con {
+        .economicModelApplicationScenario-warp {
+          .economicModel-img {
+            .economic {
+              &::before {
+                right: 49 * 0.76190476px;
+              }
+            }
+            .economic1 {
+              right: -147 * 0.76190476px;
+            }
+            .economic2 {
+              right: -80 * 0.76190476px;
+            }
+            .economic3 {
+              right: 375 * 0.76190476px;
+            }
+            .economic4 {
+              right: 600 * 0.76190476px;
+            }
+            .economic5 {
+              right: 571 * 0.76190476px;
+            }
+            .economic1Text {
+              right: -252 * 0.76190476px;
+            }
+            .economic2Text {
+              right: -237 * 0.76190476px;
+            }
+            .economic3Text {
+              right: -113 * 0.76190476px;
+            }
+            .economic4Text {
+              right: 129 * 0.76190476px;
+            }
+            .economic5Text {
+              right: 132 * 0.76190476px;
+            }
+          }
+          .applicationScenario-img {
+            .line1 {
+              right: 374 * 0.76190476px;
+            }
+            .line2 {
+              right: 454 * 0.76190476px;
+            }
+            .line3 {
+              right: 537 * 0.76190476px;
+            }
+            .application {
+              margin-right: -161 * 0.76190476px;
+            }
+            .application1 {
+              right: 272 * 0.76190476px;
+              .text {
+                right: -117 * 0.76190476px;
+              }
+            }
+            .application2 {
+              right: 206 * 0.76190476px;
+              .text {
+                right: -106 * 0.76190476px;
+              }
+            }
+            .application3 {
+              right: 263 * 0.76190476px;
+              .text {
+                right: -120 * 0.76190476px;
+              }
+            }
+            .application4 {
+              right: 456 * 0.76190476px;
+
+              .text {
+                right: -13 * 0.76190476px;
+              }
+            }
+            .application5 {
+              right: 661 * 0.76190476px;
+              .text {
+                right: 57 * 0.76190476px;
+              }
+            }
+            .application6 {
+              right: 721 * 0.76190476px;
+              .text {
+                right: 95 * 0.76190476px;
+              }
+            }
+            .application7 {
+              right: 661 * 0.76190476px;
+              .text {
+                right: 95 * 0.76190476px;
+              }
+            }
+            .application8 {
+              right: 457 * 0.76190476px;
+              .text {
+                right: -12 * 0.76190476px;
+              }
+            }
+            .application11 {
+              right: 305 * 0.76190476px;
+            }
+            .application22 {
+              right: 445 * 0.76190476px;
+            }
+            .application33 {
+              right: 589 * 0.76190476px;
+            }
+          }
+          .economicModelApplicationScenario-swiper {
+            .economicModelApplicationScenario-swiper-awesomeSwiper {
+              .economicModelApplicationScenario-swiper-title {
+                padding-right: 65 * 0.76190476px;
+              }
+
+              .economicModelApplicationScenario-swiper-info {
+                margin-right: 65 * 0.76190476px;
+              }
+
+              .economicModelApplicationScenario-swiper-desc {
+                padding-right: 65 * 0.76190476px;
+              }
+            }
+          }
+        }
+      }
+
+      .swiper-pagination {
+        text-align: right;
+        right: 53 * 0.39190476px;
+        .swiper-pagination-bullet {
+          margin-right: 12 * 0.76190476px;
+        }
+      }
+    }
+  }
 }

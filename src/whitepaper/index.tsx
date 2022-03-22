@@ -12,6 +12,9 @@ const Whitepaper = () => {
     useEffect(() => {
         i18n.changeLanguage(params.lang);
         // eslint-disable-next-line
+        if (params.lang === "ar") {
+            document.documentElement.setAttribute("dir", "rtl");
+        }
     }, []);
 
     return (
