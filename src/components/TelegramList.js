@@ -36,9 +36,7 @@ const TelegramList = props => {
 					<TelegramItem icon="/images/PORTUGUESE.png" label={t("portuguese")} url="https://t.me/AresProtocol_PortugueseCommunity" />
 
 					<TelegramItem icon="/images/UK.png" label={t("ukraine")} url="https://t.me/AresProtocol_UkrainianCommunity" />
-					<TelegramItem icon="/images/Armenia.png" label={t("armenia")} url="https://t.me/AresProtocol_Armenian" />
 					<TelegramItem icon="/images/Arabic.png" label={t("Arabic")} url="https://t.me/AresProtocolArabic_Community" />
-					<TelegramItem icon="/images/Israel-41.png" label={t("israel")} url="https://t.me/AresProtocolIsrale" />
 
 					<TelegramItem icon="/images/KO.png" label={t("korea")} url="https://t.me/AresProtocol_KoreanGroup" />
 					<TelegramItem icon="/images/JP.png" label={t("japan")} url="https://t.me/AresProtocol_JapaneseCommunity" />
@@ -46,9 +44,7 @@ const TelegramList = props => {
 					<TelegramItem icon="/images/RU-36.png" label={t("russia")} url="https://t.me/AresProtocol_RussianCommunity" />
 
 					<TelegramItem icon="/images/India-41.png" label={t("india")} url="https://t.me/AresProtocol_HindiCommunity" />
-					<TelegramItem icon="/images/BAN-44.png" label={t("bangladesh")} url="https://t.me/AresProtocolLab_bd" />
-					<TelegramItem icon="/images/FR-44.png" label={t("france")} url="https://t.me/Ares_Protocol_French_community" />
-					<TelegramItem icon="/images/indonesia-44.png" label={t("indonesia")} url="https://t.me/AresProtocolIndonesia" />
+					<TelegramItem icon="/images/FR-44.png" label={t("france")} url="https://t.me/AresProtocolFrenchCommunity" />
 				</div>
 			</div>
 		</div>
