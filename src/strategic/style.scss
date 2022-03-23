@@ -25,7 +25,7 @@
         height: 103px;
         background-repeat: no-repeat;
         background-size: contain;
-       
+
         &.hover {
           z-index: 1;
           position: absolute;
@@ -47,5 +47,14 @@
 
   .desc {
     margin-bottom: 83px;
+  }
+}
+
+
+[dir="rtl"] {
+  .strategic {
+    .strategic-logo {
+      text-align: right;
+    }
   }
 }

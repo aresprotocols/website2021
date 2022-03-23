@@ -845,3 +845,40 @@
     }
   }
 }
+
+
+.fr {
+  .nav-child {
+    .nav-child-item {
+      &.aresProtocol {
+        min-width: 166px;
+      }
+    }
+  }
+}
+.ru, .ua {
+  .nav-right {
+    .list {
+      li:nth-child(2) {
+        .item {
+          .nav-child{
+            min-width: 285px;
+          }
+        }
+      }
+    }
+  }
+}
+.tk, .ar {
+  .nav-right {
+    .list {
+      li:nth-child(3) {
+        .item {
+          .nav-child{
+            min-width: 166px;
+          }
+        }
+      }
+    }
+  }
+}

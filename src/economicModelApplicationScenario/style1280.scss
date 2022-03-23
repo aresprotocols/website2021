@@ -499,4 +499,13 @@
       }
     }
   }
+
+  .ru, .ua, .fr, .es {
+    .applicationSwiper {
+      height: 500px !important;
+      .economicModelApplicationScenario-swiper-awesomeSwiper {
+        height: 485px !important;
+      }
+    }
+  }
 }

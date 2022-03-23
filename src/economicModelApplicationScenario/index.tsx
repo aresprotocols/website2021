@@ -254,7 +254,7 @@ function EconomicModelApplicationScenario() {
           <h2 className="title">{applicationScenario.title}</h2>
           <p className="desc">{applicationScenario.desc}</p>
           <div className="economicModelApplicationScenario-warp">
-            <div className="economicModelApplicationScenario-swiper">
+            <div className="economicModelApplicationScenario-swiper applicationSwiper">
               <AwesomeSwiper
                 // eslint-disable-next-line @typescript-eslint/no-unused-vars
                 ref={(ref) => (applicationScenarioRef = ref)}
