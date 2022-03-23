@@ -388,17 +388,11 @@
 
 
 [dir="rtl"] {
-  .swiper-button-prev,
-  .swiper-container-rtl .swiper-button-next {
-    &::after{
-      content: '>' !important;
-    }
-  }
-
-  .swiper-button-next,
-  .swiper-container-rtl .swiper-button-prev {
-    &::after{
-      content: '<' !important;
+  .road {
+    .warp {
+      .team-con {
+        direction: ltr;
+      }
     }
   }
 

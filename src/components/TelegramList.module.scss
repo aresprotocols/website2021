@@ -31,10 +31,14 @@
 		box-shadow: 0px 3px 3px rgba(0, 6, 166, 0.12);
 		border-radius: 32px;
 		text-transform: capitalize;
-		padding: 0.5em 1em 0.5em 2em;
+		padding: 0.5em 1em 0.5em 1.2em;
 		color: white;
 		margin-left: -1.5em;
-		width: 10em;
+		width: 11em;
+	}
+	.teName {
+		padding: 0.5em 1em 0.5em 2em;
+		width: 12em;
 	}
 }
 
@@ -181,5 +185,16 @@
 		padding: 0.5em 2em 0.5em 1em;
 		color: white;
 		margin-right: -1.5em;
+	}
+
+
+	.telegramListLayout {
+		.modal {
+			.modalLayout {
+				.content {
+					max-width: 96%;
+				}
+			}
+		}
 	}
 }

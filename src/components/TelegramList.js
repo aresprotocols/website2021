@@ -3,12 +3,12 @@ import { useTranslation } from "react-i18next";
 import styles from "./TelegramList.module.scss"
 
 const TelegramItem = props => {
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
 
 	return (<div className={styles.telegramItemLayout}>
 		<img src={props.icon}  alt="telegram"/>
 		<a href={props.url} target="_blank" rel="noreferrer">
-			<div className={styles.label}>{props.label}&nbsp;{t("community")}</div>
+			<div className={`${styles.label}  ${i18n.language === 'jp' ? styles.teName : ''}`}>{props.label}&nbsp;{t("community")}</div>
 		</a>
 	</div>);
 }
@@ -29,7 +29,7 @@ const TelegramList = props => {
 
 				<div className={styles.description}>{t("communitiesByCountryDescription")}</div>
 
-				<div className={styles.content}>
+				<div className={`${styles.content} te-con`} >
 					<TelegramItem icon="/images/0000-35.png" label={t("official")} url="https://t.me/AresProtocolLab" />
 					<TelegramItem icon="/images/CN.png" label={t("china")} url="http://t.me/AresProtocolChina" />
 					<TelegramItem icon="/images/ES.png" label={t("spanish")} url="https://t.me/aresprotocol_spanish" />
