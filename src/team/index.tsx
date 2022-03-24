@@ -34,8 +34,9 @@ const swiperConfig = {
   },
 };
 function Team() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [swiperSliderIndex, setSwiperSliderIndex] = useState(0);
+
   let swiperRef: any = null;
   const title = t("Team Members");
   const desc = t(
@@ -138,6 +139,12 @@ function Team() {
   const slides = Math.ceil(list.length / number) as number;
 
   useEffect(() => {
+    i18n.on('languageChanged', () => {
+      setSwiperSliderIndex(0);
+    })
+  }, [])
+
+  useEffect(() => {
     swiperRef.swiper.slideTo(swiperSliderIndex);
   }, [swiperSliderIndex])
 
@@ -155,7 +162,7 @@ function Team() {
       return;
     }
     if (swiperRef) {
-      setSwiperSliderIndex(swiperSliderIndex - 1)
+      setSwiperSliderIndex(swiperSliderIndex - 1);
     }
   }
 

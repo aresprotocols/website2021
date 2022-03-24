@@ -675,7 +675,7 @@
     .usd-usd {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      align-items: flex-start;
       justify-content: space-around;
       // margin-left: 38px;
 
@@ -751,7 +751,7 @@
     .usd-rank {
       display: flex;
       flex-direction: column;
-      align-items: flxe-end;
+      align-items: flex-start;
       justify-content: space-around;
       // margin-left: 108px;
     }
@@ -770,7 +770,7 @@
     .usd-marketCap {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      align-items: flex-start;
       justify-content: space-around;
       // margin-left: 108px;
     }
@@ -778,7 +778,7 @@
     .usd-volume {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      align-items: flex-start;
       justify-content: space-around;
       // margin-left: 108px;
     }
