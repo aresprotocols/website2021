@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./style.scss";
 import "./style428.scss";
 import "./style1280.scss";
@@ -35,7 +35,8 @@ const swiperConfig = {
 };
 function Team() {
   const { t } = useTranslation();
-  let swiperRef = null;
+  const [swiperSliderIndex, setSwiperSliderIndex] = useState(0);
+  let swiperRef: any = null;
   const title = t("Team Members");
   const desc = t(
     "Individual commitment to a group effort--that is what makes a team work, a company work, a society work, a civilization work."
@@ -135,6 +136,29 @@ function Team() {
   ];
   const number = window.screen.width <= 1279 ? 1 : 3;
   const slides = Math.ceil(list.length / number) as number;
+
+  useEffect(() => {
+    swiperRef.swiper.slideTo(swiperSliderIndex);
+  }, [swiperSliderIndex])
+
+  const goNext = () => {
+    if (swiperSliderIndex > number) {
+      return;
+    }
+    if (swiperRef) {
+      setSwiperSliderIndex(swiperSliderIndex + 1);
+    }
+  }
+
+  const goPre = () => {
+    if (swiperSliderIndex === 0) {
+      return;
+    }
+    if (swiperRef) {
+      setSwiperSliderIndex(swiperSliderIndex - 1)
+    }
+  }
+
   return (
     <section className="team" id="Team">
       <div className="team-con">
@@ -160,7 +184,7 @@ function Team() {
                 }
               });
               return (
-                <div className="swiper-slide" key={index}>
+                <div className="swiper-slide"  key={index}>
                   <h2 className="title">{title}</h2>
                   <p className="desc">{desc}</p>
                   <div className="warp">
@@ -206,8 +230,10 @@ function Team() {
             })}
           </div>
         </AwesomeSwiper>
-        <div className="swiper-button-prev"></div>
-        <div className="swiper-button-next"></div>
+        {/*<div className="team-swiper-button-prev" onClick={goPre}></div>*/}
+        <div className={`team-swiper-pre ${swiperSliderIndex === 0 ? "swiper-button-disable" : ""}`} onClick={goPre}/>
+        <div className={`team-swiper-next ${swiperSliderIndex > number ? "swiper-button-disable" : ""}`} onClick={goNext}/>
+        {/*<div className="swiper-button-next"></div>*/}
         <div className="swiper-pagination-team"></div>
       </div>
     </section>

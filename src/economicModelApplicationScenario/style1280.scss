@@ -101,7 +101,7 @@
           }
           .text {
             width: 120 * 0.76190476px;
-            font-size: 22 * 0.76190476px;
+            font-size: 18px;
             line-height: 30 * 0.76190476px;
           }
           .economicText {
@@ -161,7 +161,7 @@
             }
             .text {
               width: 120 * 0.76190476px;
-              font-size: 22 * 0.76190476px;
+              font-size: 18px;
               line-height: 30 * 0.76190476px;
             }
           }
@@ -505,6 +505,52 @@
       height: 500px !important;
       .economicModelApplicationScenario-swiper-awesomeSwiper {
         height: 485px !important;
+      }
+    }
+  }
+
+  .tk {
+    .economicModelApplicationScenario-warp {
+      .application4 {
+        .text {
+          top: -11px !important;
+        }
+      }
+    }
+  }
+
+  .ru, .ua {
+    .economicModelApplicationScenario-warp {
+      .economic2Text {
+        left: -208px !important;
+      }
+      .application1 {
+        .text {
+          left: -115px !important;
+        }
+      }
+
+      .application2 {
+        .text {
+          left: -120px !important;
+        }
+      }
+      .application3 {
+        .text {
+          left: -115px !important;
+        }
+      }
+      .application5 {
+        .text {
+          left: 64px !important;
+        }
+      }
+
+      .application7 {
+        .text {
+          left: 20px !important;
+          top: 93px;
+        }
       }
     }
   }

@@ -114,16 +114,39 @@
     }
   }
 
-  .swiper-button-prev,
+  .team-swiper-button-prev,
   .swiper-container-rtl .swiper-button-next {
     background-image: url("../assets/left.png");
     left: -70px;
     top: 60%;
     transform: scale(0.75);
+    position: absolute;
+    z-index: 100;
+  }
+
+  .team-swiper-pre, .team-swiper-next {
+    background-image: url("../assets/left.png");
+    left: -70px;
+    top: 60%;
+    position: absolute;
+    z-index: 100;
+    height: 28px;
+    width: 17px;
+  }
+
+  .team-swiper-next {
+    background-image: url("../assets/right.png");
+    right: -70px;
+    left: initial;
+    top: 60%;
+  }
+
+  .swiper-button-disable {
+    opacity: 0.35;
   }
 
   .swiper-button-next,
-  .swiper-container-rtl .swiper-button-prev {
+  .swiper-container-rtl .team-swiper-button-prev {
     background-image: url("../assets/right.png");
     right: -70px;
     top: 60%;

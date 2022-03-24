@@ -108,6 +108,11 @@ const Whitepaper = () => {
                         <img src="/images/white-paper/design.png" alt="" width="760"/>
                         <p className="segment">{t("Detailed design Info P1")}</p>
                         <p className="segment">{t("Detailed design Info P2")}</p>
+                        <p className="segment">{t("Detailed design Info P3")}</p>
+                        <p className="segment">{t("Detailed design Info P4")}</p>
+                        <p className="segment">{t("Detailed design Info P5")}</p>
+                        <p className="segment">{t("Detailed design Info P6")}</p>
+                        <p className="segment">{t("Detailed design Info P7")}</p>
                     </div>
                 </section>
 
@@ -160,7 +165,6 @@ const Whitepaper = () => {
 
                 <section id="market">
                     <div className="title">{t("Data Market")}</div>
-                    <div className="subtitle">{t("Data Market")}</div>
                     <div>
                         <img src="/images/white-paper/dataMarket.jpeg" alt="" width="760"/>
                     </div>
@@ -206,7 +210,6 @@ const Whitepaper = () => {
 
                 <section id="economic">
                     <div className="title">{t("Economic Model")}</div>
-                    <div className="subtitle">{t("Economic Model")}</div>
                     <div>
                         <img src="/images/white-paper/economic.jpeg" alt="" width="760"/>
                         <p className="segment">{t("Economic Model Info")}</p>
