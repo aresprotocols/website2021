@@ -182,10 +182,10 @@ function Head() {
           name: "Français",
           id: "fr",
         },
-        {
-          name: "Türkçe",
-          id: "tk",
-        },
+        // {
+        //   name: "Türkçe",
+        //   id: "tk",
+        // },
       ],
       localIndex: 0,
     },
