@@ -35,7 +35,8 @@
   left: calc(100vw/2 - 300px);
   z-index: 999;
   margin: 0 auto;
-  box-shadow: 3px 2px 3px #1D1F75;
+  /*box-shadow: 3px 2px 3px #1D1F75;*/
+  box-shadow: 7px 15px 18px rgb(29 31 117 / 35%);
   background: #e8e8e8;
 }
 

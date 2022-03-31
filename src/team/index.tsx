@@ -227,7 +227,7 @@ function Team() {
                           </div> */}
                           <h2 className="team-name">{name}</h2>
                           <h2 className="team-position">{position}</h2>
-                          <p className="team-desc">{desc}</p>
+                          <p className="team-desc" dangerouslySetInnerHTML={{__html: desc}}></p>
                         </div>
                       );
                     })}
