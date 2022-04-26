@@ -7,10 +7,11 @@ import Alert from "./Alert";
 import styles from "./RewardsModal.module.scss";
 // import { stringToHex } from "@polkadot/util";
 import Config from "../../Config";
-import type { DeriveOwnContributions, ParaId } from '@polkadot/api-derive/types';
+import type { DeriveOwnContributions, ParaId} from '@polkadot/api-derive/types';
 import { TypeRegistry } from '@polkadot/types';
 import {u32} from "@polkadot/types";
-import {Keyring} from "@polkadot/api";
+import {blake2AsU8a, decodeAddress} from '@polkadot/util-crypto'
+import {Keyring } from "@polkadot/api";
 import {u8aToHex} from "@polkadot/util";
 
 const Web3 = require("web3");
@@ -48,12 +49,17 @@ const RewardsModal = props => {
 		//
 		// 	}).catch(err => console.log(err));
 		// setNewContributed(newContribute);
-		contributions.forEach(item => {
-			if (item.who === accounts[0].address) {
-				setNewContributed(new BigNumber(item.contributed));
-				return;
-			}
-		})
+
+		const parentHash = (await api.rpc.chain.getHeader())['parentHash']
+		//ares parachain fund_index
+		const buf = Buffer.allocUnsafe(4);
+		buf.writeUInt32LE(67);
+		let child_key = new Uint8Array([...Buffer.from('crowdloan'), ...buf])
+		let crowdloan_key = new Uint8Array([...Buffer.from(':child_storage:default:'), ...blake2AsU8a(child_key, 256)])
+		let address = decodeAddress(accounts[0].address,false,2);
+		let contribution = await api.rpc.childstate.getStorage(u8aToHex(crowdloan_key), u8aToHex(address), parentHash)
+		let x = api.createType('(Balance, Vec<u8>)', contribution.toString())
+		setNewContributed(new BigNumber(x['0'].toString()));
 	}
 
 	const handleChange = event => {
