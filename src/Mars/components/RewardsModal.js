@@ -35,19 +35,25 @@ const RewardsModal = props => {
 		setAccounts(accounts)
 		setAccount(accounts[0].address);
 
-		let dave_acc = keyring.addFromAddress(accounts[0].address)
-		let dave_acc_hex = u8aToHex(dave_acc.addressRaw);
-		const newContribute = await api.derive.crowdloan.ownContributions(paraId, [dave_acc_hex])
-			.then((result: DeriveOwnContributions)=>{
-				if (result[dave_acc_hex])
-				{
-					return new BigNumber(result[dave_acc_hex]);
-				} else {
-					return new BigNumber(0);
-				}
-
-			}).catch(err => console.log(err));
-		setNewContributed(newContribute);
+		// let dave_acc = keyring.addFromAddress(accounts[0].address)
+		// let dave_acc_hex = u8aToHex(dave_acc.addressRaw);
+		// const newContribute = await api.derive.crowdloan.ownContributions(paraId, [dave_acc_hex])
+		// 	.then((result: DeriveOwnContributions)=>{
+		// 		if (result[dave_acc_hex])
+		// 		{
+		// 			return new BigNumber(result[dave_acc_hex]);
+		// 		} else {
+		// 			return new BigNumber(0);
+		// 		}
+		//
+		// 	}).catch(err => console.log(err));
+		// setNewContributed(newContribute);
+		contributions.forEach(item => {
+			if (item.who === accounts[0].address) {
+				setNewContributed(new BigNumber(item.contributed));
+				return;
+			}
+		})
 	}
 
 	const handleChange = event => {
