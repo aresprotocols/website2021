@@ -106,7 +106,7 @@ function Road() {
       envy: "Q1",
       text: [
         t("The main network enables optimist challenge mode"),
-        t("The main network is updated on the chain and accesses the parallel Polkadot's heterogeneous parachains."),
+        t("The main network is updated on the chain and accesses the Polkadot's heterogeneous parachains."),
       ],
     },
   ];

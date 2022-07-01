@@ -337,7 +337,7 @@ export const resources = {
       "Mainnet running price prediction function": "Mainnet running price prediction function",
       "The main network optimizes the quote verification function": "The main network optimizes the quote verification function",
       "The main network enables optimist challenge mode": "The main network enables optimist challenge mode",
-      "The main network is updated on the chain and accesses the parallel Polkadot's heterogeneous parachains.": "The main network is updated on the chain and accesses the parallel Polkadot's heterogeneous parachains."
+      "The main network is updated on the chain and accesses the Polkadot's heterogeneous parachains.": "The main network is updated on the chain and accesses the Polkadot's heterogeneous parachains."
     },
   },
   cn: {
@@ -664,7 +664,15 @@ export const resources = {
       "Transaction Fee Info": "对于每个预言机请求，需要向节点支付处理费（gas）。其中 80% 属于聚合商，20% 上缴国库。ARES 代币将是第一个支持的费用代币，代币的持有者也有权投票决定哪些其他代币也可以用作 Ares 网络支持的费用代币，例如稳定币。",
       "Arbitration Info": "聚合者或挑战者通过挑战者纠纷受到惩罚，部分费用将奖励给声誉委员会。",
       "Treasury Info": "在 Ares 网络的财务局中，国库资金来自一部分交易费用、恶意节点的惩罚以及质押引起的通货膨胀。国库资金用于奖励挑战者，弥补数据需求者的损失，以及生态建设。国库资金可以通过发起提案来使用。Ares 网络的任何持有者都可以参与公投，Ares 网络可以通过民主治理模式健康发展。",
-      "Community Governance Info": "任何持有 ARES 代币的人都拥有治理权，可以投票支持协议升级和声誉委员会选举。声誉委员会通过激励挑战者和惩罚恶意节点来确保区域网络的安全。"
+      "Community Governance Info": "任何持有 ARES 代币的人都拥有治理权，可以投票支持协议升级和声誉委员会选举。声誉委员会通过激励挑战者和惩罚恶意节点来确保区域网络的安全。",
+      "Go live on Odyssey mainnet prep network": "上线Odyssey主网预备网络",
+      "1:1 mapping of ARES-ERC20 assets into Odyssey": "1:1映射 ARES-ERC20资产进入Odyssey",
+      "Main network official operation": "主网正式运行",
+      "Mainnet opens on-chain governance function": "主网开启链上治理功能",
+      "Mainnet running price prediction function": "主网运行价格预测功能",
+      "The main network optimizes the quote verification function": "主网优化报价验证功能",
+      "The main network enables optimist challenge mode": "主网启用乐观者挑战模式",
+      "The main network is updated on the chain and accesses the Polkadot's heterogeneous parachains.": "主网进行链上升级，接入Polkadot异构平行链"
     },
   },
   es: {
@@ -986,7 +994,15 @@ export const resources = {
       "Transaction Fee Info": "Por cada solicitud de oráculo hay que pagar una tasa de tramitación (gas) al nodo. El 80% de ellos pertenece a los agregadores y el 20% se entrega a la tesorería. El token ARES será el primer token de tasas soportado, y su poseedor también tiene derecho a votar para determinar qué otros tokens pueden utilizarse también como token de tasas soportado en la red Ares, como por ejemplo las monedas estables.",
       "Arbitration Info": "El agregador o retador es castigado a través de la disputa del retador, y una parte de la cuota será recompensada al comité de reputación.",
       "Treasury Info": "En la Oficina de Finanzas de la red Ares, los fondos de la tesorería provienen de una parte de la tasa de transacción, del castigo a los nodos maliciosos y de la inflación causada por las promesas. Los fondos de tesorería se utilizan para recompensar a los retadores, compensar la pérdida de los demandantes de datos y la construcción ecológica. Los fondos de tesorería pueden utilizarse iniciando propuestas. Cualquier titular de la red Ares puede participar en el referéndum, y la red Ares puede desarrollarse de forma saludable a través de un modelo de gobierno democrático.",
-      "Community Governance Info": "Cualquier poseedor del token ARES tiene derecho a gobernar y puede votar para las actualizaciones de protocolo y las elecciones del comité de reputación. El Comité de Reputación garantiza la seguridad de la red de Ares incentivando a los retadores y castigando a los nodos maliciosos."
+      "Community Governance Info": "Cualquier poseedor del token ARES tiene derecho a gobernar y puede votar para las actualizaciones de protocolo y las elecciones del comité de reputación. El Comité de Reputación garantiza la seguridad de la red de Ares incentivando a los retadores y castigando a los nodos maliciosos.",
+      "Go live on Odyssey mainnet prep network": "Se publica la red de preparación de la Red Principal de Odyssey",
+      "1:1 mapping of ARES-ERC20 assets into Odyssey": "Mapeo 1:1 de los activos de ARES-ERC20 en Odyssey",
+      "Main network official operation": "Red Principal oficialmente operativa",
+      "Mainnet opens on-chain governance function": "Red Principal, activa la gobernanza en la cadena",
+      "Mainnet running price prediction function": "Previsión de precios de la red principal",
+      "The main network optimizes the quote verification function": "Red Principal optimiza la función de validación de cotizaciones",
+      "The main network enables optimist challenge mode": "Red Principal habilita el modo de desafío optimista",
+      "The main network is updated on the chain and accesses the Polkadot's heterogeneous parachains.": "Red Principal lleva a cabo una actualización en la cadena y accede a la cadena paralela heterogénea de Polkadot"
 
     },
   },
