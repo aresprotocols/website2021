@@ -330,6 +330,14 @@ export const resources = {
       "Community Governance Info": "Anyone holding the ARES token has the right to govern and can vote for protocol upgrades and reputation committee elections. The Reputation Committee ensures the security of the Area network by incentivizing challengers and punishing malicious nodes.",
       "Recap": "Recap",
       "Recap Info": "Ares is a decentralized oracle solution, which realizes the on-chain and on-chain verification of oracle data. It provides secure and reliable data services for the interconnection and digital economy in the Web3.0 era. Under this agreement, all participants jointly maintain the security of the entire system for their own benefit. We gave a general outline of this architecture, including the various participants in the ecosystem, their economic incentive models and the operations they need to do. We will iterate in the future and provide a more detailed yellow paper to describe the design details, please continue to pay attention.",
+      "Go live on Odyssey mainnet prep network": "Go live on Odyssey mainnet prep network",
+      "1:1 mapping of ARES-ERC20 assets into Odyssey": "1:1 mapping of ARES-ERC20 assets into Odyssey",
+      "Main network official operation": "Main network official operation",
+      "Mainnet opens on-chain governance function": "Mainnet opens on-chain governance function",
+      "Mainnet running price prediction function": "Mainnet running price prediction function",
+      "The main network optimizes the quote verification function": "The main network optimizes the quote verification function",
+      "The main network enables optimist challenge mode": "The main network enables optimist challenge mode",
+      "The main network is updated on the chain and accesses the parallel Polkadot's heterogeneous parachains.": "The main network is updated on the chain and accesses the parallel Polkadot's heterogeneous parachains."
     },
   },
   cn: {

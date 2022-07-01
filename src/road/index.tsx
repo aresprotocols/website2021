@@ -77,11 +77,36 @@ function Road() {
       year: "2022",
       envy: "Q2",
       text: [
-        t("Launch the main network"),
         t("Operate multi-channelled cooperation"),
         t("Enhance cross-company companionship"),
         t("Operate Eco-marathon developer activities"),
         t("Issue chain verified, VRF algorithm based game The Trojan Box"),
+      ],
+    },
+    {
+      year: "2022",
+      envy: "Q3",
+      text: [
+        t("Go live on Odyssey mainnet prep network"),
+        t("1:1 mapping of ARES-ERC20 assets into Odyssey"),
+        t("Main network official operation"),
+      ],
+    },
+    {
+      year: "2022",
+      envy: "Q4",
+      text: [
+        t("Mainnet opens on-chain governance function"),
+        t("Mainnet running price prediction function"),
+        t("The main network optimizes the quote verification function"),
+      ],
+    },
+    {
+      year: "2023",
+      envy: "Q1",
+      text: [
+        t("The main network enables optimist challenge mode"),
+        t("The main network is updated on the chain and accesses the parallel Polkadot's heterogeneous parachains."),
       ],
     },
   ];
@@ -161,8 +186,31 @@ function Road() {
                     </ul>
                   </div>
                   <div className="swiper-slide">
-                    <ul className="swiperItemWrapper item2">
+                    <ul className="swiperItemWrapper item1">
                       {data.slice(4, 8).map((item, index) => {
+                        const { year, envy, text } = item;
+                        return (
+                            <li className="wrapItem" key={index}>
+                              <h2 className="wrap-road-title">
+                                {year}
+                                <span>{envy}</span>
+                              </h2>
+                              <p className="wrap-road-info">
+                                <img src={roadIcon} alt="" />
+                              </p>
+                              <div className="wrap-road-text">
+                                {text.map((t, index) => (
+                                    <p key={index}>{t}</p>
+                                ))}
+                              </div>
+                            </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                  <div className="swiper-slide">
+                    <ul className="swiperItemWrapper item2">
+                      {data.slice(8, 12).map((item, index) => {
                         const { year, envy, text } = item;
                         return (
                             <li className="wrapItem" key={index}>
