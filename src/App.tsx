@@ -39,12 +39,12 @@ function App() {
                   <Road/>
                   <Join/>
                   <Foot/>
-                  <div className="widget" style={{display: `${widgetShow ? "block" : "none"}`}}>
-                    <div className="close">
-                      <span onClick={() => setWidgetShow(!widgetShow)}>×</span>
-                    </div>
-                    <div id="crypto-widget-CoinList" data-design="classic" data-coins="ares-protocol"></div>
-                  </div>
+                  {/*<div className="widget" style={{display: `${widgetShow ? "block" : "none"}`}}>*/}
+                  {/*  <div className="close">*/}
+                  {/*    <span onClick={() => setWidgetShow(!widgetShow)}>×</span>*/}
+                  {/*  </div>*/}
+                  {/*  <div id="crypto-widget-CoinList" data-design="classic" data-coins="ares-protocol"></div>*/}
+                  {/*</div>*/}
                 </div>
               </Route>
 
