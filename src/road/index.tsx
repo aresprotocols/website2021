@@ -88,7 +88,7 @@ function Road() {
       envy: "Q3",
       text: [
         t("Go live on Odyssey mainnet prep network"),
-        t("1:1 mapping of ARES-ERC20 assets into Odyssey"),
+        t("mapping of ARES-ERC20 assets into Odyssey"),
         t("Main network official operation"),
       ],
     },

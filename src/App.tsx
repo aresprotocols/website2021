@@ -1,4 +1,4 @@
-import {lazy, Suspense, useState} from "react";
+import {lazy, Suspense, useEffect, useState} from "react";
 import "./App.css";
 import "./reset.css";
 import "./global.css";
@@ -18,6 +18,25 @@ function App() {
   const [widgetShow, setWidgetShow] = useState(true);
   const backend = lazy(() => import("./backend/Backend"));
   const marsApp = lazy(() => import("./Mars"));
+  const [browserType, setBrowserType] = useState("");
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent.toLowerCase();
+
+    const isSafari = /safari/i.test(userAgent) && !/chrome/i.test(userAgent);
+    const isChrome = /chrome/i.test(userAgent);
+
+    if (isSafari) {
+        setBrowserType("safari");
+    } else if (isChrome) {
+        const script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://crypto.com/price/static/widget/index.js";
+        document.getElementById("root")?.appendChild(script);
+        setBrowserType("chrome");
+    }
+  }, []);
+
 
   return (
       <>
@@ -39,12 +58,15 @@ function App() {
                   <Road/>
                   <Join/>
                   <Foot/>
-                  {/*<div className="widget" style={{display: `${widgetShow ? "block" : "none"}`}}>*/}
-                  {/*  <div className="close">*/}
-                  {/*    <span onClick={() => setWidgetShow(!widgetShow)}>×</span>*/}
-                  {/*  </div>*/}
-                  {/*  <div id="crypto-widget-CoinList" data-design="classic" data-coins="ares-protocol"></div>*/}
-                  {/*</div>*/}
+                  {
+                    browserType === "chrome" &&
+                      <div className="widget" style={{display: `${widgetShow ? "block" : "none"}`}}>
+                        <div className="close">
+                          <span onClick={() => setWidgetShow(!widgetShow)}>×</span>
+                        </div>
+                        <div id="crypto-widget-CoinList" data-design="classic" data-coins="ares-protocol"></div>
+                      </div>
+                  }
                 </div>
               </Route>
 
