@@ -2333,6 +2333,14 @@ export const resources = {
       "Arbitration Info": "يعاقب المجمع أو المنافس من خلال نزاع المنافسة ، وسيتم مكافأة جزء من الرسوم إلى لجنة السمعة.",
       "Treasury Info": "في المكتب المالي لشبكة Ares، تأتي أموال الخزانة من جزء من رسوم المعاملة، ومعاقبة العقد الخبيثة، والتضخم الناجم عن التعهدات. تُستخدم أموال الخزانة لمكافأة المنافسين، وتعويض فقدان طالبي البيانات، والبناء البيئي. يمكن استخدام أموال الخزانة من خلال تقديم المقترحات. يمكن ل أي حامل Ares المشاركة في الاستفتاء، ويمكن لشبكة Ares أن تتطور بشكل صحي من خلال نموذج الحكم الديمقراطي.",
       "Community Governance Info": "أي شخص يحمل رمز ARES له الحق في الحكم ويمكنه التصويت لترقيات البروتوكول وانتخابات لجنة السمعة. تكفل لجنة السمعة أمن شبكة المنطقة من خلال تحفيز المنافسين ومعاقبة العقد الخبيثة.",
+      "Go live on Odyssey mainnet prep network": "انطلاق اعدادات الشبكة الرئيسية",
+      "mapping of ARES-ERC20 assets into Odyssey": "1:1 مطابقة لأصول ARES - ERC20 في شبكة اوديسسي",
+      "Main network official operation": "تشغيل الشبكة الرئيسية بشكل رسمي",
+      "Mainnet opens on-chain governance function": "افتتاح الحوكمة داخل السلسلة على الشبكة الرئيسية تشغيل",
+      "Mainnet running price prediction function": "مهمة توقع السعر عن طريق الشبكة",
+      "The main network optimizes the quote verification function": "الرئيسية الشبكة الرئيسية تحسن وظيفة التحقق من الأسعار",
+      "The main network enables optimist challenge mode": "تتيح الشبكة الرئيسية وضع التحدي الأمثل ",
+      "The main network is updated on the chain and accesses the Polkadot's heterogeneous parachains.": " تم تحديث الشبكة الرئيسية على السلسلة والوصول إلى باراتشين الغير المتجانسة على Polkadot"
     }
   },
   ua: {
@@ -2674,7 +2682,6 @@ export const resources = {
       "The main network optimizes the quote verification function": "Основна мережа оптимізує функцію перевірки котирувань",
       "The main network enables optimist challenge mode": "Основна мережа забезпечує оптимістичний режим рішення задач",
       "The main network is updated on the chain and accesses the Polkadot's heterogeneous parachains.": "Основна мережа здійснює оновлення в ланцюжку та отримує доступ до різнорідних парачейнів Polkadot."
-
     },
   },
   fr: {
