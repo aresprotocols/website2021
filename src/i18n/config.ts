@@ -2338,7 +2338,7 @@ export const resources = {
       "Main network official operation": "تشغيل الشبكة الرئيسية بشكل رسمي",
       "Mainnet opens on-chain governance function": "افتتاح الحوكمة داخل السلسلة على الشبكة الرئيسية",
       "Mainnet running price prediction function": "تشغيل مهمة توقع السعر عن طريق الشبكة الرئيسية",
-      "The main network optimizes the quote verification function": "الرئيسية الشبكة الرئيسية تحسن وظيفة التحقق من الأسعار",
+      "The main network optimizes the quote verification function": "الشبكة الرئيسية تحسن وظيفة التحقق من الأسعار",
       "The main network enables optimist challenge mode": "تتيح الشبكة الرئيسية وضع التحدي الأمثل ",
       "The main network is updated on the chain and accesses the Polkadot's heterogeneous parachains.": "تم تحديث الشبكة الرئيسية على السلسلة والوصول إلى باراتشين الغير المتجانسة على Polkadot"
     }
