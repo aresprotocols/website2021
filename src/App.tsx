@@ -13,6 +13,7 @@ import classnames from "classnames";
 import Foot from "./foot";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Whitepaper from "./whitepaper";
+import Launch from "./animation/launch";
 
 function App() {
   const [widgetShow, setWidgetShow] = useState(true);
@@ -67,6 +68,7 @@ function App() {
                         <div id="crypto-widget-CoinList" data-design="classic" data-coins="ares-protocol"></div>
                       </div>
                   }
+                  <Launch />
                 </div>
               </Route>
 
