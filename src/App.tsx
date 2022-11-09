@@ -14,6 +14,8 @@ import Foot from "./foot";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Whitepaper from "./whitepaper";
 import Launch from "./animation/launch";
+import Product from "./product";
+import ProductFunction from "./product/function";
 
 function App() {
   const [widgetShow, setWidgetShow] = useState(true);
@@ -52,6 +54,8 @@ function App() {
                     )}
                 >
                   <Head/>
+                  <Product />
+                  <ProductFunction />
                   <Technology/>
                   <EconomicModelApplicationScenario/>
                   <Team/>

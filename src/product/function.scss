@@ -1,0 +1,90 @@
+
+
+.function {
+  background: #1195F0;
+  height: 1060px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  .content {
+    width: 84%;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    flex-direction: row;
+    margin: 0 auto;
+    padding-top: 82px;
+    .func-logo {
+      img {
+        width: 1000px;
+      }
+    }
+    .desc {
+      width: 420px;
+      height: 356px;
+      background: rgba(203, 211, 251, 0.15);
+      border-radius: 14px 14px 14px 14px;
+      align-self: flex-end;
+      margin-top: 100px;
+      padding: 20px 25px;
+      color: #FFF;
+      .info {
+        width: 48px;
+        height: 0px;
+        border: 2px solid #3eddcf;
+        border-radius: 2px;
+        display: flex;
+        margin-left: 10px;
+        margin-top: 13px;
+      }
+      h2 {
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .desc-info {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: left;
+      }
+    }
+  }
+
+  .contact {
+    width: 83%;
+    margin: 0 auto;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background: #FFF;
+    border-radius: 18px 18px 18px 18px;
+    opacity: 1;
+    p {
+      font-size: 24px;
+      color: #1D1F75;
+      .email {
+        font-weight: bold;
+      }
+    }
+    button {
+      width: 151px;
+      height: 60px;
+      background: #1195F0;
+      border-radius: 100px 100px 100px 100px;
+      opacity: 1;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      color: #FFF;
+      font-weight: 600;
+      a {
+        color: #FFF;
+        text-decoration: none;
+      }
+    }
+  }
+}

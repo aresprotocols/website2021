@@ -138,10 +138,15 @@ function Head() {
         id: "Buy Token",
         url: t("Trade ARES"),
       },
+      // {
+      //   name: "Apps",
+      //   id: "Apps",
+      //   url: "https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer",
+      // },
       {
-        name: "Apps",
+        name: "Mainnet",
         id: "Apps",
-        url: "https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer",
+        url: "https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fodyssey.aresprotocol.io#/explorer",
       },
     ],
     language: {
