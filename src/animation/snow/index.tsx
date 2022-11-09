@@ -5,9 +5,10 @@ import {useEffect} from "react";
 const Snow = () => {
 
     useEffect(() => {
-        const snowIcon = document.getElementById("snowIcon").textContent;
+        const snowIcon = document.getElementById("snowIcon")?.textContent;
         const canvas = document.getElementById("canvas");
-        var ctx = canvas.getContext("2d");
+        // @ts-ignore
+        var ctx = canvas?.getContext("2d");
         /* 定义x为窗口宽度，y为窗口高度 */
         let windowX = window.outerWidth;
         let windowY = window.outerHeight;
@@ -16,6 +17,7 @@ const Snow = () => {
         /* 假设有600片雪 */
         const snowNum = 600;
         /* 绑定窗口大小发生改变事件，让canvas随时铺满浏览器可视区 */
+        // @ts-ignore
         window.onresize = resize(canvas, windowX, windowY);
         resize(canvas, windowX, windowY);
 
@@ -39,12 +41,12 @@ const Snow = () => {
 
     }, []);
 
-    function resize(canvas){
+    function resize(canvas: any, windowX: any, windowY: any) {
         canvas.width = window.outerWidth;
         canvas.height = window.outerHeight;
     };
 
-    function draw(ctx, num, arr, snowIcon) {
+    function draw(ctx: any, num: any, arr: any, snowIcon: any) {
         /* 遍历数组 */
         for (let i = 0; i < num; i++) {
             var item = arr[i];
@@ -66,7 +68,7 @@ const Snow = () => {
         }
     }
 
-    function updated(ctx, num, arr, windowX, windowY) {
+    function updated(ctx: any, num: any, arr: any, windowX: any, windowY: any) {
         for (let i = 0; i < num; i++) {
             var item = arr[i];
             /* x轴位置+0.1，变化小点 */

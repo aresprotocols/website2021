@@ -5,7 +5,7 @@ import gsap from "gsap";
 const Launch = () => {
 
     useEffect(() => {
-        let tl = gsap.timeline({repeat: -1, repeatDelay: 1}),
+        let tl = gsap.timeline({repeat: 0, repeatDelay: 1}),
             labels = document.getElementsByClassName("labels"),
             rocket = document.querySelectorAll(".rocket__body, .rocket__wing, .rocket__fire"),
             smokeL = document.querySelectorAll(".rocket__smoke--left"),
@@ -82,11 +82,16 @@ const Launch = () => {
                 repeat: 10,
             }, "launch-=1.8");
 
+
+        setTimeout(() => {
+            document.getElementById("launch-wrapper")?.classList.add("launch-wrapper-hidden");
+        }, 7500);
+
     }, []);
 
 
     return (
-        <div className="launch-wrapper">
+        <div className="launch-wrapper" id="launch-wrapper">
             <div id="frame">
                 <div className="rocket" onClick={() => console.log("rocket click")}>
                     <div className="rocket__body">

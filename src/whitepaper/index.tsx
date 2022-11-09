@@ -10,8 +10,10 @@ const Whitepaper = () => {
 
 
     useEffect(() => {
+        // @ts-ignore
         i18n.changeLanguage(params.lang);
         // eslint-disable-next-line
+        // @ts-ignore
         if (params.lang === "ar") {
             document.documentElement.setAttribute("dir", "rtl");
         }

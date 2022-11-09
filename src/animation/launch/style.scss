@@ -5,8 +5,26 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
-  z-index: 100;
+  height: 110vh;
+  z-index: 999;
+  background-color: #FFF;
+  -webkit-animation: rocks 3s 1 forwards;
+  animation-delay: 4.5s;
+}
+
+@keyframes rocks {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.launch-wrapper-hidden {
+  display: none;
 }
 
 :root {
@@ -24,10 +42,10 @@
 #frame {
   display: flex;
   //width: 100%;
-  height: 90%;
-  margin-right: 100px;
+  height: 80%;
+  margin-right: -20px;
   align-items: end;
-  justify-content: right;
+  justify-content: center;
 }
 
 
@@ -54,6 +72,7 @@ $rocket-margin: 1.25;
   width: $rocket-width;
   height: $rocket-height;
   cursor: pointer;
+  scale: 2;
 
 
   &__body {

@@ -19,8 +19,8 @@ function Strategic() {
         <ul className="strategic-logo">
           {new Array(21).fill("").map((url: string | undefined, index) => {
             const idx = index + 1;
-            const colorImg = require(`../assets/Color/strategic${idx}.png`).default;
-            const hoverImg = require(`../assets/Hover/strategic${idx}.png`).default;
+            const colorImg = require(`../assets/Color/strategic${idx}.png`);
+            const hoverImg = require(`../assets/Hover/strategic${idx}.png`);
             return (
               <li className="logo" key={`${index}`}>
                 <span className='color' style={{backgroundImage:`url(${colorImg})`}}></span>
