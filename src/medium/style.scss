@@ -1,0 +1,119 @@
+
+.medium {
+  background: #FFF;
+  height: 506px;
+  width: 100%;
+  position: relative;
+  .content {
+    .title, .desc {
+      color: #1D1F75;
+    }
+    .title {
+      margin-bottom: 28px;
+      font-size: 40px;
+    }
+    .desc {
+      font-size: 20px;
+      font-family: Segoe UI-Regular, Segoe UI;
+    }
+  }
+  .con {
+    width: 80%;
+    margin: 0 auto;
+    .swiper-wrapper {
+      height: 987px;
+      .warp {
+        display: flex;
+        width: 80%;
+        .item {
+          width: 388px;
+          height: 163px;
+          background: #1195F0;
+          border-radius: 15px;
+          &:not(:first-child) {
+            margin-left: 16px;
+          }
+        }
+      }
+    }
+  }
+  .team-swiper-button-prev,
+  .swiper-container-rtl .swiper-button-next {
+    //background-image: url("../assets/left.png");
+    -webkit-mask: url("../assets/left.png") no-repeat;
+    mask: url("../assets/left.png") no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-color: #1195F0;
+    left: 65px;
+    top: 40%;
+    transform: scale(0.75);
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .team-swiper-pre, .team-swiper-next {
+    //background-image: url("../assets/left.png");
+    -webkit-mask: url("../assets/left.png") no-repeat;
+    mask: url("../assets/left.png") no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-color: #1195F0;
+    left: 65px;
+    top: 62%;
+    position: absolute;
+    z-index: 100;
+    height: 28px;
+    width: 17px;
+    cursor: pointer;
+  }
+
+  .team-swiper-next {
+    -webkit-mask: url("../assets/right.png") no-repeat;
+    mask: url("../assets/right.png") no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-color: #1195F0;
+    right: 82px;
+    left: initial;
+    top: 62%;
+    cursor: pointer;
+  }
+
+  .swiper-button-disable {
+    opacity: 0.35;
+  }
+
+  .swiper-button-next,
+  .swiper-container-rtl .team-swiper-button-prev {
+    -webkit-mask: url("../assets/right.png") no-repeat;
+    mask: url("../assets/right.png") no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-color: #1195F0;
+    right: 82px;
+    top: 62%;
+    transform: scale(0.75);
+    cursor: pointer;
+  }
+  .swiper-pagination-team {
+    position: absolute;
+    transform: translate(-50%) scale(0.75);
+    bottom: 75px;
+    left: 50%;
+    z-index: 1;
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      opacity: 0.4;
+      margin-left: 12px;
+      background: #fff;
+      &.swiper-pagination-bullet-active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+

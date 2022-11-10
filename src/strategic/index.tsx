@@ -13,9 +13,11 @@ function Strategic() {
   );
   return (
     <section className="strategic" id="Strategic">
-      <div className="strategic-con">
+      <div className="head">
         <h2 className="title">{title}</h2>
         <p className="desc">{desc}</p>
+      </div>
+      <div className="strategic-con">
         <ul className="strategic-logo">
           {new Array(21).fill("").map((url: string | undefined, index) => {
             const idx = index + 1;

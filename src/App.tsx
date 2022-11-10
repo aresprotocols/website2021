@@ -16,6 +16,12 @@ import Whitepaper from "./whitepaper";
 import Launch from "./animation/launch";
 import Product from "./product";
 import ProductFunction from "./product/function";
+import Warehouse from "./warehouse";
+import AresScan from "./aresscan";
+import Partners from "./partners";
+import Medium from "./medium";
+import strategic from "./strategic";
+import NavBar from "./head/nav";
 
 function App() {
   const [widgetShow, setWidgetShow] = useState(true);
@@ -56,11 +62,15 @@ function App() {
                   <Head/>
                   <Product />
                   <ProductFunction />
+                  <Warehouse />
+                  <AresScan />
                   <Technology/>
                   <EconomicModelApplicationScenario/>
                   <Team/>
-                  <Strategic/>
+                  {/*<Strategic/>*/}
+                  <Partners />
                   <Road/>
+                  <Medium />
                   <Join/>
                   <Foot/>
                   {
@@ -74,6 +84,18 @@ function App() {
                   }
                   <Launch />
                 </div>
+              </Route>
+              <Route path="/investors" >
+                <NavBar />
+                <Strategic />
+                <Join />
+                <Foot />
+              </Route>
+              <Route path="/teams" >
+                <NavBar />
+                <Team />
+                <Join />
+                <Foot />
               </Route>
 
               <Route path="/whitepaper/:lang" component={Whitepaper} />
