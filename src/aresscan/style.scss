@@ -28,7 +28,8 @@
           font-size: 27px;
           font-weight: 600;
           color: #1D1F75;
-          line-height: 85px;
+          padding: 0 30px;
+          line-height: 30px;
         }
 
         .item-con {
@@ -60,6 +61,10 @@
       cursor: pointer;
       margin: 0 auto;
       margin-top: 64px;
+      a {
+        color: #FFF;
+        text-decoration: none;
+      }
     }
   }
 }

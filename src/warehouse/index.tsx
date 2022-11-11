@@ -1,6 +1,7 @@
 import {useTranslation} from "react-i18next";
 import whouse from "../assets/product/warehouse.png";
-import "./style.scss"
+import "./style.scss";
+import "./style428.scss";
 
 const Warehouse = () => {
 

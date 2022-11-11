@@ -1,9 +1,9 @@
-
-import "./style.scss";
 import React, {useEffect, useState} from "react";
 import {useTranslation} from "react-i18next";
 import AwesomeSwiper from "react-awesome-swiper";
 import i18n from "i18next";
+import "./style.scss";
+import "./style428.scss";
 
 const Medium = () => {
     const { t } = useTranslation();
@@ -88,21 +88,41 @@ const Medium = () => {
                         className="team-swiper"
                     >
                         <div className="swiper-wrapper">
-                            <div className="swiper-slide warp">
-                                {
-                                    new Array(4).fill(1).map((index, item) => {
-                                        return (
-                                            <div className="item">Hello {item}</div>
-                                        );
-                                    })
-                                }
-                            </div>
+                            {
+                                new Array(slides).fill(null).map((slide, index) => {
+                                    const newList: any[] = [];
+                                    list.forEach((t, sindex) => {
+                                        if (!index && sindex < index * number + number) {
+                                            newList.push(t);
+                                        }
+                                        if (
+                                            index > 0 &&
+                                            sindex < index * number + number &&
+                                            sindex >= (index - 1) * number + number
+                                        ) {
+                                            newList.push(t);
+                                        }
+                                    });
+                                    return (
+                                        <div className="swiper-slide warp">
+                                            {
+                                                newList.map((index, item) => {
+                                                    return (
+                                                        <div className="item">Hello {item}</div>
+                                                    );
+                                                })
+                                            }
+                                        </div>
+                                    );
+                                })
+                            }
                         </div>
                     </AwesomeSwiper>
                     {/*<div className="team-swiper-button-prev" onClick={goPre}></div>*/}
                     <div className={`team-swiper-pre ${swiperSliderIndex === 0 ? "swiper-button-disable" : ""}`} onClick={goPre}/>
                     <div className={`team-swiper-next ${swiperSliderIndex > number ? "swiper-button-disable" : ""}`} onClick={goNext}/>
                     {/*<div className="swiper-button-next"></div>*/}
+                    <div className="swiper-pagination-team"></div>
                 </div>
             </div>
         </section>

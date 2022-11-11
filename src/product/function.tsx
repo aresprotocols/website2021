@@ -1,4 +1,5 @@
 import "./function.scss";
+import "./function428.scss";
 
 import func from "../assets/product/Funtion.png";
 

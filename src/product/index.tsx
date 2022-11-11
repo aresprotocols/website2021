@@ -1,6 +1,7 @@
 
-import "./style.scss";
 import React from "react";
+import "./style.scss";
+import "./style428.scss";
 import {useTranslation} from "react-i18next";
 import scan from "../assets/product/scan.png";
 import price from "../assets/product/price.png";
@@ -61,11 +62,13 @@ const Product = () => {
                                         <div className="img-con">
                                             <img src={img} alt="" />
                                         </div>
-                                        <h2>{title}</h2>
-                                        <p>{desc}</p>
-                                        <a href={link} target="_blank" rel="noreferrer">
-                                            <img src={arrowRight} alt="arrow" className="arrow"/>
-                                        </a>
+                                        <div>
+                                            <h2>{title}</h2>
+                                            <p>{desc}</p>
+                                            <a href={link} target="_blank" rel="noreferrer">
+                                                <img src={arrowRight} alt="arrow" className="arrow"/>
+                                            </a>
+                                        </div>
                                     </li>
                                 );
                             })

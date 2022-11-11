@@ -1,9 +1,6 @@
 import classnames from "classnames";
 import {Carousel} from "react-responsive-carousel";
 import logoImg from "../assets/logo.png";
-import parityImg from "../assets/parity.png";
-import vedioEn from "../assets/vedioEn.mp4";
-import vedio from "../assets/vedio.mp4";
 import topImg from "../assets/top.png";
 import {useTranslation} from "react-i18next";
 import {ReactElement, useEffect, useState} from "react";
@@ -42,7 +39,7 @@ const NavBar = () => {
                     {
                         name: t("Technology"),
                         id: "Technology",
-                        url: "#Technology",
+                        url: "/#Technology",
                         minScrollTop: 998,
                         maxScrollTop: 2051,
                         minScrollTop1280: 759,
@@ -51,7 +48,7 @@ const NavBar = () => {
                     {
                         name: t("Economics"),
                         id: "Economics",
-                        url: "#Economics",
+                        url: "/#Economics",
                         minScrollTop: 2051,
                         maxScrollTop: 3097,
                         minScrollTop1280: 1562,
@@ -60,7 +57,25 @@ const NavBar = () => {
                     {
                         name: t("Application"),
                         id: "Application",
-                        url: "#Application",
+                        url: "/#Application",
+                        minScrollTop: 3097,
+                        maxScrollTop: 10000,
+                        minScrollTop1280: 2359,
+                        maxScrollTop1280: 10000,
+                    },
+                    {
+                        name: t("Team"),
+                        id: "Team",
+                        url: "/teams",
+                        minScrollTop: 3097,
+                        maxScrollTop: 10000,
+                        minScrollTop1280: 2359,
+                        maxScrollTop1280: 10000,
+                    },
+                    {
+                        name: t("Investors"),
+                        id: "investors",
+                        url: "/investors",
                         minScrollTop: 3097,
                         maxScrollTop: 10000,
                         minScrollTop1280: 2359,
@@ -154,7 +169,6 @@ const NavBar = () => {
     const [languageStatus, setlanguageStatus] = useState(false);
     const [scrollTop, setScroll] = useState(0);
     const [phone, setPhone] = useState(false);
-    const [vedioSwich, setVedioStauts] = useState(false);
     const [language, setlanguage] = useState(
         head.language.select[head.language.localIndex].name
     );
@@ -277,16 +291,16 @@ const NavBar = () => {
                                             <li key={id || index}>
                                                 {children ? (
                                                     <div className="item">
-                              <span
-                                  className="nav-child-text"
-                                  onClick={() =>
-                                      setNavChildActive(
-                                          navChildActive === index ? null : index
-                                      )
-                                  }
-                              >
-                                {name}
-                              </span>
+                                                      <span
+                                                          className="nav-child-text"
+                                                          onClick={() =>
+                                                              setNavChildActive(
+                                                                  navChildActive === index ? null : index
+                                                              )
+                                                          }
+                                                      >
+                                                        {name}
+                                                      </span>
                                                         <span
                                                             onClick={() =>
                                                                 setNavChildActive(
@@ -340,7 +354,7 @@ const NavBar = () => {
                                                                             )}
                                                                             href={url}
                                                                             target={
-                                                                                url?.[0] === "#" ? "_self" : "_blank"
+                                                                                url?.[0] === "/" ? "_self" : "_blank"
                                                                             }
                                                                             rel="noreferrer"
                                                                         >

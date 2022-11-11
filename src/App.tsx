@@ -66,7 +66,7 @@ function App() {
                   <AresScan />
                   <Technology/>
                   <EconomicModelApplicationScenario/>
-                  <Team/>
+                  {/*<Team/>*/}
                   {/*<Strategic/>*/}
                   <Partners />
                   <Road/>

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1280px) and (max-width: 1679px) {
+@media only screen and (min-width: 1280px) and (max-width: 1590px) {
   .cn {
     .team-name{
       margin-top: 50 * 0.76190476px;
@@ -14,24 +14,20 @@
       margin-bottom: 40 * 0.76190476px;
     }
     .team-con {
-      width: 1500 * 0.76190476px;
+      //width: 1500 * 0.76190476px;
 
       .swiper-wrapper {
-        height: 987 * 0.76190476px;
+        //height: 987 * 0.76190476px;
 
         .warp {
         }
 
         .item {
-          width: 536 * 0.76190476px;
-          height: 452 * 0.76190476px;
+          width: 486 * 0.76190476px;
+          height: 425 * 0.76190476px;
           box-shadow: 7 * 0.76190476px 21 * 0.76190476px 18 * 0.76190476px
             rgba(29, 31, 117, 0.15);
           border-radius: 15 * 0.76190476px;
-
-          &:not(:first-child) {
-            margin-left: 16 * 0.76190476px;
-          }
 
           .top {
             margin-top: -61.7 * 0.76190476px;
@@ -85,7 +81,7 @@
           .team-desc {
             padding-left: 52 * 0.76190476px;
             padding-right: 30 * 0.76190476px;
-            font-size: 24 * 0.76190476px;
+            font-size: 22 * 0.76190476px;
             line-height: 28 * 0.76190476px;
           }
         }

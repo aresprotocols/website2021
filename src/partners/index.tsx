@@ -1,7 +1,8 @@
 import React from "react";
 import {useTranslation} from "react-i18next";
-import "./style.scss";
 import twitter from "../assets/twitter.png";
+import "./style.scss";
+import "./style428.scss";
 
 const Partners = () => {
     const { t } = useTranslation();

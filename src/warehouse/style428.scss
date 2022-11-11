@@ -1,0 +1,23 @@
+@media only screen and (max-width: 780px) {
+  .warehouse {
+    display: flex;
+    flex-direction: column;
+    height: initial;
+    .desc {
+      font-size: 15px;
+    }
+    .con {
+      display: flex;
+      flex-direction: column;
+      img {
+        margin-top: 20px;
+        width: 90%;
+      }
+
+      .warehouse-desc {
+        margin: 0 auto;
+        padding-top: 20px;
+      }
+    }
+  }
+}

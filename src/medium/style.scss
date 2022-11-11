@@ -98,21 +98,7 @@
     cursor: pointer;
   }
   .swiper-pagination-team {
-    position: absolute;
-    transform: translate(-50%) scale(0.75);
-    bottom: 75px;
-    left: 50%;
-    z-index: 1;
-    .swiper-pagination-bullet {
-      width: 20px;
-      height: 20px;
-      opacity: 0.4;
-      margin-left: 12px;
-      background: #fff;
-      &.swiper-pagination-bullet-active {
-        opacity: 1;
-      }
-    }
+    display: none;
   }
 }
 

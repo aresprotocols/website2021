@@ -1,0 +1,33 @@
+@media only screen and (max-width: 780px) {
+  .partners {
+    height: initial;
+    padding-bottom: 28px;
+
+    .content {
+      .title {
+        margin-bottom: 28px;
+        font-size: 36px;
+        padding-top: 28px;
+      }
+
+      .desc {
+        font-size: 15px;
+      }
+
+      .con {
+        width: 86%;
+        margin-top: 10px;
+
+        .wrap {
+          justify-content: flex-start;
+          padding-top: 15px;
+
+          .item {
+            width: 156px;
+            height: 41px;
+          }
+        }
+      }
+    }
+  }
+}

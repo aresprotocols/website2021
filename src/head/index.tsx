@@ -111,6 +111,24 @@ function Head() {
             minScrollTop1280: 2359,
             maxScrollTop1280: 10000,
           },
+          {
+            name: t("Team"),
+            id: "Team",
+            url: "/teams",
+            minScrollTop: 3097,
+            maxScrollTop: 10000,
+            minScrollTop1280: 2359,
+            maxScrollTop1280: 10000,
+          },
+          {
+            name: t("Investors"),
+            id: "investors",
+            url: "/investors",
+            minScrollTop: 3097,
+            maxScrollTop: 10000,
+            minScrollTop1280: 2359,
+            maxScrollTop1280: 10000,
+          },
         ],
       },
       {
@@ -425,7 +443,7 @@ function Head() {
                                         )}
                                         href={url}
                                         target={
-                                          url?.[0] === "#" ? "_self" : "_blank"
+                                          url?.[0] === "/" ? "_self" : "_blank"
                                         }
                                         rel="noreferrer"
                                       >

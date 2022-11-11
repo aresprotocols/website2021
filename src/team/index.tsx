@@ -1,43 +1,13 @@
 /* eslint-disable react/jsx-no-target-blank */
-import React, {useEffect, useState} from "react";
+import React from "react";
 import "./style.scss";
 import "./style428.scss";
 import "./style1280.scss";
 import { useTranslation } from "react-i18next";
-// import twitterImg from "../assets/twitter.png";
-// import telegramImg from "../assets/telegram.png";
-import AwesomeSwiper from "react-awesome-swiper";
-const swiperConfig = {
-  // loop: true,
-  // autoplay: {
-  //   delay: 3000,
-  //   stopOnLastSlide: false,
-  //   disableOnInteraction: true,
-  // },
-  // Disable preloading of all images
-  preloadImages: false,
-  // Enable lazy loading
-  lazy: true,
-  speed: 500,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination-team",
-    bulletElement: "li",
-    hideOnClick: true,
-    clickable: true,
-  },
-  on: {
-    slideChange: function () {},
-  },
-};
-function Team() {
-  const { t, i18n } = useTranslation();
-  const [swiperSliderIndex, setSwiperSliderIndex] = useState(0);
 
-  let swiperRef: any = null;
+function Team() {
+  const { t } = useTranslation();
+
   const title = t("Team Members");
   const desc = t(
     "Individual commitment to a group effort--that is what makes a team work, a company work, a society work, a civilization work."
@@ -135,113 +105,32 @@ function Team() {
       ),
     },
   ];
-  const number = window.screen.width <= 1279 ? 1 : 3;
-  const slides = Math.ceil(list.length / number) as number;
-
-  useEffect(() => {
-    i18n.on('languageChanged', () => {
-      setSwiperSliderIndex(0);
-    })
-  }, [])
-
-  useEffect(() => {
-    swiperRef.swiper.slideTo(swiperSliderIndex);
-  }, [swiperSliderIndex])
-
-  const goNext = () => {
-    if (swiperSliderIndex > number) {
-      return;
-    }
-    if (swiperRef) {
-      setSwiperSliderIndex(swiperSliderIndex + 1);
-    }
-  }
-
-  const goPre = () => {
-    if (swiperSliderIndex === 0) {
-      return;
-    }
-    if (swiperRef) {
-      setSwiperSliderIndex(swiperSliderIndex - 1);
-    }
-  }
 
   return (
     <section className="team" id="Team">
+      <div className="head">
+        <h2 className="title">{title}</h2>
+        <p className="desc">{desc}</p>
+      </div>
       <div className="team-con">
-        <AwesomeSwiper
-            //eslint-disable-next-line @typescript-eslint/no-unused-vars
-          ref={(ref) => (swiperRef = ref)}
-          config={swiperConfig}
-          className="team-swiper"
-        >
-          <div className="swiper-wrapper">
-            {new Array(slides).fill(null).map((slide, index) => {
-              const newList: any[] = [];
-              list.forEach((t, sindex) => {
-                if (!index && sindex < index * number + number) {
-                  newList.push(t);
-                }
-                if (
-                  index > 0 &&
-                  sindex < index * number + number &&
-                  sindex >= (index - 1) * number + number
-                ) {
-                  newList.push(t);
-                }
-              });
-              return (
-                <div className="swiper-slide"  key={index}>
-                  <h2 className="title">{title}</h2>
-                  <p className="desc">{desc}</p>
-                  <div className="warp">
-                    {newList.map((data, sindex) => {
-                      const {position, name, desc } =
-                        data;
-                      return (
-                        <div className="item" key={`${index}${sindex}`}>
-                          {/* <div className="top">
-                            <div className="left">
-                              <img className="headImg" src={img} alt="" />
-                              <p className="position">
-                                <span className="info"></span>{" "}
-                                <span className="text">{position}</span>
-                              </p>
-                            </div>
-                            <div className="right">
-                              <a href={twitter} target="_blank">
-                                <img
-                                  className="twitter"
-                                  src={twitterImg}
-                                  alt=""
-                                />
-                              </a>
-                              <a href={telegram} target="_blank">
-                                <img
-                                  className="telegram"
-                                  src={telegramImg}
-                                  alt=""
-                                />
-                              </a>
-                            </div>
-                          </div> */}
+        <div className="swiper-wrapper">
+            <div className="swiper-slide">
+              <div className="warp">
+                {
+                  list.map((data, index) => {
+                    const {position, name, desc } = data;
+                    return (
+                        <div className="item" key={`${index}`}>
                           <h2 className="team-name">{name}</h2>
                           <h2 className="team-position">{position}</h2>
                           <p className="team-desc" dangerouslySetInnerHTML={{__html: desc}}></p>
                         </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </AwesomeSwiper>
-        {/*<div className="team-swiper-button-prev" onClick={goPre}></div>*/}
-        <div className={`team-swiper-pre ${swiperSliderIndex === 0 ? "swiper-button-disable" : ""}`} onClick={goPre}/>
-        <div className={`team-swiper-next ${swiperSliderIndex > number ? "swiper-button-disable" : ""}`} onClick={goNext}/>
-        {/*<div className="swiper-button-next"></div>*/}
-        <div className="swiper-pagination-team"></div>
+                    );
+                  })
+                }
+              </div>
+            </div>
+        </div>
       </div>
     </section>
   );

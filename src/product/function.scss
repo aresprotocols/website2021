@@ -16,18 +16,19 @@
     margin: 0 auto;
     padding-top: 82px;
     .func-logo {
+      width: 73%;
       img {
-        width: 1000px;
+        width: 950px;
       }
     }
     .desc {
-      width: 420px;
+      max-width: 260px;
       height: 356px;
       background: rgba(203, 211, 251, 0.15);
       border-radius: 14px 14px 14px 14px;
       align-self: flex-end;
-      margin-top: 100px;
-      padding: 20px 25px;
+      margin-top: 89px;
+      padding: 15px 25px;
       color: #FFF;
       .info {
         width: 48px;
