@@ -22,7 +22,7 @@
       }
     }
     .desc {
-      max-width: 260px;
+      max-width: 335px;
       height: 356px;
       background: rgba(203, 211, 251, 0.15);
       border-radius: 14px 14px 14px 14px;
@@ -30,13 +30,14 @@
       margin-top: 89px;
       padding: 15px 25px;
       color: #FFF;
+      text-align: left;
+
       .info {
         width: 48px;
         height: 0px;
         border: 2px solid #3eddcf;
         border-radius: 2px;
         display: flex;
-        margin-left: 10px;
         margin-top: 13px;
       }
       h2 {
@@ -71,9 +72,10 @@
         font-weight: bold;
       }
     }
-    button {
+    .contactButton {
       width: 151px;
       height: 60px;
+      line-height: 60px;
       background: #1195F0;
       border-radius: 100px 100px 100px 100px;
       opacity: 1;

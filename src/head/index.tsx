@@ -162,9 +162,9 @@ function Head() {
       //   url: "https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io/#/explorer",
       // },
       {
-        name: "Mainnet",
+        name: t("Mainnet"),
         id: "Apps",
-        url: "https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fodyssey.aresprotocol.io#/explorer",
+        url: "https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fodyssey.aresprotocol.io#/explorer",
       },
     ],
     language: {

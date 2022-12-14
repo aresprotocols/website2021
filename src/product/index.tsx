@@ -13,8 +13,7 @@ const Product = () => {
     const { t } = useTranslation();
 
     const title = t("About Product");
-    const desc =
-        t("We develop several products focused on providing services and information to data on the blockchain.");
+    const desc = t("About Product Desc");
 
     const list = [
         {
@@ -27,7 +26,7 @@ const Product = () => {
             img: scan,
             title: t("AresScan"),
             desc: t("Areschain Explorer"),
-            link: "https://aresscan.aresprotocol.io/ares",
+            link: "https://aresscan.aresprotocol.io",
         },
         {
             img: doc,
@@ -58,6 +57,7 @@ const Product = () => {
                                     <li
                                         key={item.title}
                                         className="item"
+                                        onClick={() => window.open(link, "_blank")}
                                     >
                                         <div className="img-con">
                                             <img src={img} alt="" />

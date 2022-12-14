@@ -9,7 +9,7 @@
       color: #FFF;
     }
     .title {
-      margin-bottom: 28px;
+      margin-bottom: 15px;
       font-size: 40px;
     }
     .desc {
@@ -21,18 +21,18 @@
     width: 82%;
     margin: 0 auto;
     .wrap {
-      display: flex;
-       flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
       column-gap: 10px;
       row-gap: 15px;
-      justify-content: space-around;
+      justify-items: center;
       .item {
         padding: 10px 0;
         display: flex;
         justify-content: center;
         align-items: center;
         column-gap: 15px;
-        width: 230px;
+        width: 220px;
         height: 63px;
         background: #FFFFFF;
         border-radius: 13px 13px 13px 13px;

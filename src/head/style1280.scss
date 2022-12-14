@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1280px) and (max-width: 1679px) {
+@media only screen and (min-width: 1280px) and (max-width: 1750px) {
   #root.cn .parity {
     width: 282 * 0.76190476px;
   }
@@ -20,7 +20,7 @@
       .head-top-nav {
         height: 139 * 0.76190476px;
         .nav {
-          width: 1680 * 0.76190476px;
+          width: 1605 * 0.76190476px;
           padding-top: 33 * 0.76190476px;
 
           .nav-left {
@@ -33,11 +33,11 @@
           .nav-right {
             .list {
               .item {
-                font-size: 25 * 0.76190476px;
+                font-size: 18px;
                 margin-left: 42 * 0.76190476px;
                 &.Apps {
                   width: 132 * 0.76190476px;
-                  font-size: 25 * 0.76190476px;
+                  font-size: 18px;
                   height: 53 * 0.76190476px;
                   border-radius: 34 * 0.76190476px;
                 }
@@ -62,7 +62,7 @@
                 .nav-child-item {
                   height: 33 * 0.76190476px;
                   line-height: 33 * 0.76190476px;
-                  font-size: 25 * 0.76190476px;
+                  font-size: 18px;
                   &.aresProtocol {
                     width: 166 * 0.76190476px;
                   }
@@ -77,7 +77,7 @@
               margin-left: 60 * 0.76190476px;
 
               .language-name {
-                font-size: 25 * 0.76190476px;
+                font-size: 18px;
                 .one {
                   &.isShowLanguage {
                     //top: 13 * 0.76190476px;
@@ -149,7 +149,7 @@
         }
 
         .head-warp {
-          width: 1280 * 0.76190476px;
+          width: 1605 * 0.76190476px;
 
           .content-desc {
             padding-bottom: 36 * 0.76190476px;
@@ -232,7 +232,7 @@
       }
 
       .usd-usd {
-        // margin-left: 38 * 0.76190476px;
+        margin-left: -80px;
 
         .usd-name {
           font-size: 20 * 0.76190476px;

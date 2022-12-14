@@ -24,16 +24,16 @@ const Warehouse = () => {
                         </div>
                         <div>
                             <ul>
-                                <li>Get transaction prices</li>
-                                <li>Get prices after aggregation</li>
-                                <li>Get all prices by token</li>
-                                <li>Get token history price</li>
-                                <li>Get token request information</li>
-                                <li>Get updated price history</li>
+                                <li>{t("Get transaction prices")}</li>
+                                <li>{t("Get prices after aggregation")}</li>
+                                <li>{t("Get all prices by token")}</li>
+                                <li>{t("Get token history price")}</li>
+                                <li>{t("Get token request information")}</li>
+                                <li>{t("Get updated price history")}</li>
                             </ul>
                         </div>
                         <div className="btn">
-                            <a href="http://warehouseui.aresprotocol.io/" target="_blank" rel="noreferrer" >Warehouse</a>
+                            <a href="http://warehouseui.aresprotocol.io/" target="_blank" rel="noreferrer" >{t("Warehouse")}</a>
                         </div>
                     </div>
                     <div>

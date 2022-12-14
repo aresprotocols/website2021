@@ -13,9 +13,11 @@
     font-size: 20px;
   }
   .con {
+    width: 88%;
     display: flex;
     justify-content: center;
-    column-gap: 187px;
+    column-gap: 100px;
+    margin: 0 auto;
     img {
       width: 870px;
     }

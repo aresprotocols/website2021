@@ -2,17 +2,19 @@ import "./function.scss";
 import "./function428.scss";
 
 import func from "../assets/product/Funtion.png";
+import {useTranslation} from "react-i18next";
 
 const ProductFunction = () => {
+    const { t } = useTranslation();
 
     return (
         <section className="function">
            <div className="content">
                <div className="desc">
-                   <h2>Product Function</h2>
+                   <h2>{t("Product Function")}</h2>
                    <span className="info"></span>
                    <p className="desc-info">
-                       Ares oracle is developed based on Substrate, mainly including ares-oracle, oracle-finance, and staking-extend, which pallets are responsible for “Quotation integration,” “validator reward distribution,” and“ validator compliance review”.
+                       {t("Product Function Desc")}
                    </p>
                </div>
                <div className="func-logo">
@@ -21,12 +23,12 @@ const ProductFunction = () => {
            </div>
             <div className="contact">
                 <p>
-                    Want to integrate our oracle products <span className="email">info@aresprotocol.io</span>
+                    {t("Want to integrate our oracle products")} <span className="email">info@aresprotocol.io</span>
                 </p>
                 <span>
-                    <button>
-                        <a href="mailto:info@aresprotocol.io">Contact Us</a>
-                    </button>
+                    <div className="contactButton">
+                        <a href="mailto:info@aresprotocol.io">{t("Contact Us")}</a>
+                    </div>
                 </span>
             </div>
         </section>

@@ -47,21 +47,21 @@ const AresScan = () => {
                             <div className="item-con">
                                 { data ? data.total_validators : "-"}
                             </div>
-                            <h2>Validator</h2>
+                            <h2>{t("Validator")}</h2>
                         </li>
 
                         <li className="item">
                             <div className="item-con">
                                 { data ? data.total_extrinsics_signed : "-"}
                             </div>
-                            <h2>Total Transfer</h2>
+                            <h2>{t("Total Transfer")}</h2>
                         </li>
 
                         <li className="item">
                             <div className="item-con">
-                                18
+                                { data ? data.total_price_requests : "-"}
                             </div>
-                            <h2>Data requests per block</h2>
+                            <h2>{t("Requests for a block")}</h2>
                         </li>
 
                         <li className="item">
@@ -70,13 +70,12 @@ const AresScan = () => {
                                     data ? parseRewards(data.total_issuance) : "-"
                                 }
                             </div>
-                            <h2>Total Rewards
-                                Issued</h2>
+                            <h2>{t("Total Rewards Issued")}</h2>
                         </li>
                     </ul>
                     <div>
                         <div className="btn">
-                            <a href="https://aresscan.aresprotocol.io/ares" target="_blank" rel="noreferrer">AresScan</a>
+                            <a href="https://aresscan.aresprotocol.io" target="_blank" rel="noreferrer">{t("AresScan")}</a>
                         </div>
                     </div>
                 </div>
