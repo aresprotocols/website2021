@@ -96,17 +96,41 @@ function Road() {
       year: "2022",
       envy: "Q4",
       text: [
-        t("Mainnet opens on-chain governance function"),
-        t("Mainnet running price prediction function"),
-        t("The main network optimizes the quote verification function"),
+        t("Mainnet runs Price Prediction Function"),
+        t("Mainnet optimizes Quote Verification Function"),
+        t("Opening of Ares Technical Community"),
       ],
     },
     {
       year: "2023",
       envy: "Q1",
       text: [
-        t("The main network enables optimist challenge mode"),
-        t("The main network is updated on the chain and accesses the Polkadot's heterogeneous parachains."),
+        t("Mainnet runs Price Alert Function"),
+        t("Polkadot/Kusama ParaChain technical readiness"),
+      ],
+    },
+    {
+      year: "2023",
+      envy: "Q2",
+      text: [
+        t("Promote use cases to get applications running on Mainnet"),
+        t("Polkadot/Kusama ParaChain technical readiness"),
+      ],
+    },
+    {
+      year: "2023",
+      envy: "Q3",
+      text: [
+        t("Mainnet turns on Ares governance"),
+        t("Mainnet is upgrade on-chain to access Polkadot’s heterogeneous parachains"),
+      ],
+    },
+    {
+      year: "2023",
+      envy: "Q4",
+      text: [
+        t("Optimist challenge mode enabled on the mainnet"),
+        t("Implement Polkadot XCMP-based cross-chain oracle solution"),
       ],
     },
   ];
@@ -209,8 +233,31 @@ function Road() {
                     </ul>
                   </div>
                   <div className="swiper-slide">
-                    <ul className="swiperItemWrapper item2">
+                    <ul className="swiperItemWrapper item1">
                       {data.slice(8, 12).map((item, index) => {
+                        const { year, envy, text } = item;
+                        return (
+                            <li className="wrapItem" key={index}>
+                              <h2 className="wrap-road-title">
+                                {year}
+                                <span>{envy}</span>
+                              </h2>
+                              <p className="wrap-road-info">
+                                <img src={roadIcon} alt="" />
+                              </p>
+                              <div className="wrap-road-text">
+                                {text.map((t, index) => (
+                                    <p key={index}>{t}</p>
+                                ))}
+                              </div>
+                            </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                  <div className="swiper-slide">
+                    <ul className="swiperItemWrapper item2">
+                      {data.slice(12, 16).map((item, index) => {
                         const { year, envy, text } = item;
                         return (
                             <li className="wrapItem" key={index}>

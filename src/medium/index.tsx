@@ -49,6 +49,21 @@ const Medium = () => {
 
     const list = [
         {
+            name: "Weekly Update｜Ares Protocol publishes roadmap to 2023",
+            image: "https://miro.medium.com/max/1400/1*WZ-1YL-KGcyQokqLuOSCHw.webp",
+            link: "https://aresprotocollab.medium.com/weekly-update-ares-protocol-publishes-roadmap-to-2023-8e9322f2ee5d",
+        },
+        {
+            name: "Discontinuation of Trojan & iliad current staking",
+            image: "https://miro.medium.com/max/1400/1*b5rscwdz6tT4C3I_xIENfQ.webp",
+            link: "https://aresprotocollab.medium.com/discontinuation-of-trojan-iliad-current-staking-aa834efce45e",
+        },
+        {
+            name: "Weekly Update｜Introduction of mainnet features added on the Ares Protocol website",
+            image: "https://miro.medium.com/max/1400/1*TJZpLqYuJGLjhKMzvQCKyQ.webp",
+            link: "https://aresprotocollab.medium.com/weekly-update-introduction-of-mainnet-features-added-on-the-ares-protocol-website-757bdc38122b",
+        },
+        {
             name: "Open invitation to all blockchain technology developers to join the “Ares Technology Community”!",
             image: "https://miro.medium.com/max/1400/1*k0aUv1v1DOiugIGEB5o7-w.webp",
             link: "https://aresprotocollab.medium.com/open-invitation-to-all-blockchain-technology-developers-to-join-the-ares-technology-community-ac339f1bc572"

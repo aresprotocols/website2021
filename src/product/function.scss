@@ -73,7 +73,8 @@
       }
     }
     .contactButton {
-      width: 151px;
+      min-width: 151px;
+      padding: 0 10px;
       height: 60px;
       line-height: 60px;
       background: #1195F0;
