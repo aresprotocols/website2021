@@ -1,4 +1,4 @@
-import {lazy, Suspense, useEffect, useState} from "react";
+import React, {lazy, Suspense, useEffect, useState} from "react";
 import "./App.css";
 import "./reset.css";
 import "./global.css";
@@ -20,7 +20,6 @@ import Warehouse from "./warehouse";
 import AresScan from "./aresscan";
 import Partners from "./partners";
 import Medium from "./medium";
-import strategic from "./strategic";
 import NavBar from "./head/nav";
 
 function App() {

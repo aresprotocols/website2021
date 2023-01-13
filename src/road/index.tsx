@@ -3,8 +3,37 @@ import "./style.scss";
 import "./style1280.scss";
 import { useTranslation } from "react-i18next";
 import roadIcon from "../assets/road.png";
-// import roadLogo from "../assets/link-logo-btn.png";
-import AwesomeSwiper from "react-awesome-swiper";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+// @ts-ignore
+import Slider from "react-slick";
+
+
+function SampleNextArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+      <div
+          className={className}
+          style={{ ...style, display: "block", background: ""}}
+          onClick={onClick}
+      />
+  );
+}
+
+function SamplePrevArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+      <div
+          className={className}
+          style={{ ...style, display: "block", background: "" }}
+          onClick={onClick}
+      />
+  );
+}
+
+
+
 
 function Road() {
   let swiperRef = null;
@@ -135,182 +164,126 @@ function Road() {
     },
   ];
 
-  if (document.body.clientWidth <= 1779 && document.body.clientWidth > 750) {
-    const swiperConfig = {
-      // loop: true,
-      // autoplay: {
-      //   delay: 3000,
-      //   stopOnLastSlide: false,
-      //   disableOnInteraction: true,
-      // },
-      // Disable preloading of all images
-      preloadImages: false,
-      // Enable lazy loading
-      lazy: true,
-      speed: 500,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      // pagination: {
-      //   el: ".swiper-pagination-team",
-      //   bulletElement: "li",
-      //   hideOnClick: true,
-      //   clickable: true,
-      // },
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-      },
-      // breakpoints: {
-      //   640: {
-      //     slidesPerView: 4,
-      //     spaceBetween: 0
-      //   }
-      // },
-      on: {
-        slideChange: function () {},
-      },
-    };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
+
+  if (document.body.clientWidth <= 2150 && document.body.clientWidth > 750) {
     return (
-      <section className="road m">
-        <div className="road-con">
-          <h2 className="title">{title}</h2>
-          <p className="desc">{desc}</p>
-          <div className="warp">
-            <div className="team-con">
-              <AwesomeSwiper
-                  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                ref={(ref) => (swiperRef = ref)}
-                config={swiperConfig}
-                className="team-swiper"
-              >
-                <div className="swiper-wrapper">
-                  <div className="swiper-slide">
-                    <ul className="swiperItemWrapper item1">
-                      {data.slice(0, 4).map((item, index) => {
-                        const { year, envy, text } = item;
-                        return (
-                            <li className="wrapItem" key={index}>
-                              <h2 className="wrap-road-title">
-                                {year}
-                                <span>{envy}</span>
-                              </h2>
-                              <p className="wrap-road-info">
-                                <img src={roadIcon} alt="" />
-                              </p>
-                              <div className="wrap-road-text">
-                                {text.map((t, index) => (
-                                    <p key={index}>{t}</p>
-                                ))}
-                              </div>
-                            </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                  <div className="swiper-slide">
-                    <ul className="swiperItemWrapper item1">
-                      {data.slice(4, 8).map((item, index) => {
-                        const { year, envy, text } = item;
-                        return (
-                            <li className="wrapItem" key={index}>
-                              <h2 className="wrap-road-title">
-                                {year}
-                                <span>{envy}</span>
-                              </h2>
-                              <p className="wrap-road-info">
-                                <img src={roadIcon} alt="" />
-                              </p>
-                              <div className="wrap-road-text">
-                                {text.map((t, index) => (
-                                    <p key={index}>{t}</p>
-                                ))}
-                              </div>
-                            </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                  <div className="swiper-slide">
-                    <ul className="swiperItemWrapper item1">
-                      {data.slice(8, 12).map((item, index) => {
-                        const { year, envy, text } = item;
-                        return (
-                            <li className="wrapItem" key={index}>
-                              <h2 className="wrap-road-title">
-                                {year}
-                                <span>{envy}</span>
-                              </h2>
-                              <p className="wrap-road-info">
-                                <img src={roadIcon} alt="" />
-                              </p>
-                              <div className="wrap-road-text">
-                                {text.map((t, index) => (
-                                    <p key={index}>{t}</p>
-                                ))}
-                              </div>
-                            </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                  <div className="swiper-slide">
-                    <ul className="swiperItemWrapper item2">
-                      {data.slice(12, 16).map((item, index) => {
-                        const { year, envy, text } = item;
-                        return (
-                            <li className="wrapItem" key={index}>
-                              <h2 className="wrap-road-title">
-                                {year}
-                                <span>{envy}</span>
-                              </h2>
-                              <p className="wrap-road-info">
-                                <img src={roadIcon} alt="" />
-                              </p>
-                              <div className="wrap-road-text">
-                                {text.map((t, index) => (
-                                    <p key={index}>{t}</p>
-                                ))}
-                              </div>
-                            </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
+        <section className="road m">
+          <div className="road-con">
+            <h2 className="title">{title}</h2>
+            <p className="desc">{desc}</p>
+            <div className="wraps">
+              <Slider {...settings}>
+                <div className="swiper-slide" style={{width: "400px"}}>
+                  <ul className="swiperItemWrapper item1">
+                    {data.slice(0, 4).map((item, index) => {
+                      const { year, envy, text } = item;
+                      return (
+                          <li className="wrapItem" key={index}>
+                            <h2 className="wrap-road-title">
+                              {year}
+                              <span>{envy}</span>
+                            </h2>
+                            <p className="wrap-road-info">
+                              <img src={roadIcon} alt="" />
+                            </p>
+                            <div className="wrap-road-text">
+                              {text.map((t, index) => (
+                                  <p key={index}>{t}</p>
+                              ))}
+                            </div>
+                          </li>
+                      );
+                    })}
+                  </ul>
                 </div>
-                <div className="swiper-pagination"></div>
-              </AwesomeSwiper>
-              <div className="swiper-button-prev"></div>
-              <div className="swiper-button-next"></div>
-              {/*<div className="swiper-pagination"></div>*/}
+                <div className="swiper-slide">
+                  <ul className="swiperItemWrapper item1">
+                    {data.slice(4, 8).map((item, index) => {
+                      const { year, envy, text } = item;
+                      return (
+                          <li className="wrapItem" key={index}>
+                            <h2 className="wrap-road-title">
+                              {year}
+                              <span>{envy}</span>
+                            </h2>
+                            <p className="wrap-road-info">
+                              <img src={roadIcon} alt="" />
+                            </p>
+                            <div className="wrap-road-text">
+                              {text.map((t, index) => (
+                                  <p key={index}>{t}</p>
+                              ))}
+                            </div>
+                          </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+                <div className="swiper-slide">
+                  <ul className="swiperItemWrapper item1">
+                    {data.slice(8, 12).map((item, index) => {
+                      const { year, envy, text } = item;
+                      return (
+                          <li className="wrapItem" key={index}>
+                            <h2 className="wrap-road-title">
+                              {year}
+                              <span>{envy}</span>
+                            </h2>
+                            <p className="wrap-road-info">
+                              <img src={roadIcon} alt="" />
+                            </p>
+                            <div className="wrap-road-text">
+                              {text.map((t, index) => (
+                                  <p key={index}>{t}</p>
+                              ))}
+                            </div>
+                          </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+                <div className="swiper-slide">
+                  <ul className="swiperItemWrapper item2">
+                    {data.slice(12, 16).map((item, index) => {
+                      const { year, envy, text } = item;
+                      return (
+                          <li className="wrapItem" key={index}>
+                            <h2 className="wrap-road-title">
+                              {year}
+                              <span>{envy}</span>
+                            </h2>
+                            <p className="wrap-road-info">
+                              <img src={roadIcon} alt="" />
+                            </p>
+                            <div className="wrap-road-text">
+                              {text.map((t, index) => (
+                                  <p key={index}>{t}</p>
+                              ))}
+                            </div>
+                          </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </Slider>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
     );
   }
 
 
   if (document.body.clientWidth <= 750) {
-    const swiperConfig = {
-
-      preloadImages: false,
-      // Enable lazy loading
-      lazy: true,
-      speed: 500,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-      },
-      on: {
-        slideChange: function () {},
-      },
-    };
     return (
         <section className="road m phone">
           <div className="road-con">
@@ -318,40 +291,33 @@ function Road() {
             <p className="desc">{desc}</p>
             <div className="warp">
               <div className="team-con">
-                <AwesomeSwiper
-                    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                    ref={(ref) => (swiperRef = ref)}
-                    config={swiperConfig}
-                    className="team-swiper"
+                <Slider {...settings}
+                    className="team-swiper swiper-container"
                 >
-                  <div className="swiper-wrapper">
                     {data.map((item, index) => {
                       const { year, envy, text } = item;
                       return (
-                        <div className="swiper-slide">
-                          <div className="item" key={index}>
-                            <h2 className="road-title">
-                              {year}
-                              <span>{envy}</span>
-                            </h2>
-                            <p className="road-info">
-                              <img src={roadIcon} alt="" />
-                            </p>
-                            <div className="road-text">
-                              {text.map((t, index) => (
-                                <p key={index}>{t}</p>
-                              ))}
+                          <div className="swiper-wrapper">
+                            <div className="swiper-slide">
+                              <div className="item" key={index}>
+                                <h2 className="road-title">
+                                  {year}
+                                  <span>{envy}</span>
+                                </h2>
+                                <p className="road-info">
+                                  <img src={roadIcon} alt="" />
+                                </p>
+                                <div className="road-text">
+                                  {text.map((t, index) => (
+                                    <p key={index}>{t}</p>
+                                  ))}
+                                </div>
+                              </div>
                             </div>
                           </div>
-                        </div>
                       );
                     })}
-                  </div>
-                  <div className="swiper-pagination"></div>
-                </AwesomeSwiper>
-                <div className="swiper-button-prev"></div>
-                <div className="swiper-button-next"></div>
-                {/*<div className="swiper-pagination"></div>*/}
+                </Slider>
               </div>
             </div>
           </div>

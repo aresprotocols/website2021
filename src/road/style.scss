@@ -4,6 +4,13 @@
   &.m {
     margin: 0 auto;
     padding-bottom: 67px;
+    .wraps {
+      width: 80%;
+      margin: 0 auto;
+      .slick-prev:before, .slick-next:before {
+        color: #2ce6db;
+      }
+    }
     .swiper-container {
       width: 80%;
     }
@@ -330,6 +337,9 @@
     width: 100%;
   }
   &.phone {
+    .slick-dots {
+      padding-bottom: 20px;
+    }
     .swiper-container {
       width: 85%;
       margin: 0 auto;
