@@ -18,6 +18,7 @@ module.exports = {
           os: require.resolve("os-browserify/browser"),
           url: require.resolve("url/"),
           crypto: require.resolve("crypto-browserify"),
+          timers: false
         },
       },
       plugins: [

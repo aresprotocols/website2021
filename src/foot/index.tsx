@@ -88,7 +88,7 @@ function Foot() {
     email: "name@company.com",
     emailBtn: t("Send"),
   };
-  const copyright = "Copyright © 2021.The Ares Protocol All rights reserved.";
+  const copyright = "Copyright © 2023.The Ares Protocol All rights reserved.";
 
   const handleSubscribe = async () => {
     setClick(true)

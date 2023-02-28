@@ -49,6 +49,16 @@ const Medium = () => {
 
     const list = [
         {
+            name: "Adjustment of Trojan & iliad regular staking APY from April 11",
+            image: "https://miro.medium.com/v2/resize:fit:1400/0*09bpuUvELnvQ-iKq",
+            link: "https://aresprotocollab.medium.com/adjustment-of-trojan-iliad-regular-staking-apy-from-april-11-1ce364da2ab8",
+        },
+        {
+          name: "Weekly Update｜Ares Protocol update Odyssey to version 173",
+            image: "https://miro.medium.com/v2/resize:fit:1400/0*cRuFxjGicTqCd--p",
+            link: "https://aresprotocollab.medium.com/weekly-update-ares-protocol-update-odyssey-to-version-173-2a6a0f4b5173",
+        },
+        {
             name: "Weekly Update｜Ares Protocol publishes roadmap to 2023",
             image: "https://miro.medium.com/max/1400/1*WZ-1YL-KGcyQokqLuOSCHw.webp",
             link: "https://aresprotocollab.medium.com/weekly-update-ares-protocol-publishes-roadmap-to-2023-8e9322f2ee5d",
@@ -107,6 +117,7 @@ const Medium = () => {
         i18n.on('languageChanged', () => {
             setSwiperSliderIndex(0);
         })
+
     }, [])
 
     useEffect(() => {
