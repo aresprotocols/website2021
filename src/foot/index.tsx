@@ -5,6 +5,7 @@ import "./style428.scss";
 import emailImg from "../assets/email.png";
 import { useTranslation } from "react-i18next";
 import Config from "../Config";
+import {Link} from "react-router-dom";
 
 function Foot() {
   const { t, i18n } = useTranslation();
@@ -29,27 +30,27 @@ function Foot() {
     list: [
       {
         name: t("Home"),
-        url: "#Home",
+        url: "/#Home",
       },
       {
         name: t("Technology"),
-        url: "#Technology",
+        url: "/#Technology",
       },
       {
         name: t("Economics"),
-        url: "#Economics",
+        url: "/#Economics",
       },
       {
         name: t("Application"),
-        url: "#Application",
+        url: "/#Application",
       },
       {
         name: t("Team Members"),
-        url: "#Team",
+        url: "/teams",
       },
       {
         name: t("Strategic Investors"),
-        url: "#Strategic",
+        url: "/investors",
       },
     ],
   };
@@ -78,7 +79,7 @@ function Foot() {
       },
       {
         name: t("Gladios"),
-        url: "https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer",
+        url: "https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer",
       },
     ],
   };
@@ -124,13 +125,15 @@ function Foot() {
               const { name, url } = item;
               return (
                 <li className="link-item" key={index}>
-                  <a
-                    href={url}
-                    target={url[0] === "#" ? "_self" : "_blank"}
-                    rel="noreferrer"
-                  >
-                    {name}
-                  </a>
+                  {
+                    url.startsWith("/#") ? <a
+                        href={url}
+                        target={url.startsWith("/#") ? "_self" : "_blank"}
+                        rel="noreferrer"
+                    >
+                      {name}
+                    </a> : <Link to={url} target="_blank">{name}</Link>
+                  }
                 </li>
               );
             })}

@@ -49,6 +49,61 @@ const Medium = () => {
 
     const list = [
         {
+            name: "Announcement｜Trojan&iliad staking APY, New Adjustment Coming on August 14th",
+            image: "https://miro.medium.com/v2/resize:fit:1400/0*WFfbUtLuyRQVBdtw",
+            link: "https://aresprotocollab.medium.com/announcement-trojan-iliad-staking-apy-new-adjustment-coming-on-august-14th-ff788a37a068"
+        },
+        {
+            name: "Weekly Update｜AI Oracle model developed to provide price prediction up and down",
+            image: "https://miro.medium.com/v2/resize:fit:1400/0*syManFjtrguEccib",
+            link: "https://aresprotocollab.medium.com/weekly-update-ai-oracle-model-developed-to-provide-price-prediction-up-and-down-5afc8b19e6ec",
+        },
+        {
+            name: "Reminder related to the mainnet Odyssey nominators dropped",
+            image: "https://miro.medium.com/v2/resize:fit:1400/0*zzqih-wAd8HI4w5s",
+            link: "https://aresprotocollab.medium.com/reminder-related-to-the-mainnet-odyssey-nominators-dropped-def7aac5a6",
+        },
+        {
+            name: "Weekly Update｜Plans to increase the diversity of ares-chain data sources",
+            image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*qip3LTrgLkyN4wau3xFdKQ.png",
+            link: "https://aresprotocollab.medium.com/weekly-update-plans-to-increase-the-diversity-of-ares-chain-data-sources-676878072f5f",
+        },
+        {
+            name: "Price Prediction Operation Guide",
+            image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ezRfYKj2O49n0Sa8nBgMYQ.jpeg",
+            link: "https://aresprotocollab.medium.com/price-prediction-operation-guide-807ebf2b8fcd",
+        },
+        {
+            name: "Just join and Earn with your Price Prediction!",
+            image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*2WtowwZETg1v5w2YBgWS0Q.jpeg",
+            link: "https://aresprotocollab.medium.com/just-join-and-earn-with-your-price-prediction-ac24a7b47c60",
+        },
+        {
+            name: "Weekly Update｜ares-oracle will combine with AI to launch a price prediction application model",
+            image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*O01QEX5jevKRvdaQf_QrvQ.png",
+            link: "https://aresprotocollab.medium.com/weekly-update-ares-oracle-will-combine-with-ai-to-launch-a-price-prediction-application-model-810966ec930a",
+        },
+        {
+            name: "Announcement | Trojan&iliad finished upgrade, new adjustment will be on May 1",
+            image: "https://miro.medium.com/v2/resize:fit:1400/0*UAGD-fyhhVV3IQZ6",
+            link: "https://aresprotocollab.medium.com/announcement-trojan-iliad-finished-upgrade-new-adjustment-will-be-on-may-1-267116b8c0dc",
+        },
+        {
+            name: "Weekly Update｜Reward campaign ends successfully, rewards will be issued soon",
+            image: "https://miro.medium.com/v2/resize:fit:1400/0*ZYOvrn-r1HgP38K4",
+            link: "https://aresprotocollab.medium.com/weekly-update-reward-campaign-ends-successfully-rewards-will-be-issued-soon-532d211fc2bd",
+        },
+        {
+            name: "Announcement｜Price Alert function is officially open for public testing",
+            image: "https://miro.medium.com/v2/resize:fit:1400/0*XOA_h6ILE1d2p_Ur",
+            link: "https://aresprotocollab.medium.com/announcement-price-alert-function-is-officially-open-for-public-testing-602517ef2d3c",
+        },
+        {
+            name: "Weekly Update｜Price Alert feature enters internal testing",
+            image: "https://miro.medium.com/v2/resize:fit:1400/0*RYNewiTuS0ROMK4f",
+            link: "https://aresprotocollab.medium.com/weekly-update-price-alert-feature-enters-internal-testing-70e2ef954bc6",
+        },
+        {
             name: "Adjustment of Trojan & iliad regular staking APY from April 11",
             image: "https://miro.medium.com/v2/resize:fit:1400/0*09bpuUvELnvQ-iKq",
             link: "https://aresprotocollab.medium.com/adjustment-of-trojan-iliad-regular-staking-apy-from-april-11-1ce364da2ab8",
